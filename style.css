@@ -1,23 +1,12 @@
 div.menuCat{
 height: 100%;
-width:40px;
 }
 div.menu-infos{
 background-color: red;
-
 }
 div.menu-dut{
 background-color: blue
 }
 div.menu-licence{
 background-color: green;
-}
-div.menu-accueil{
-background-color: yellow;
-}
-
-div.accueil{
-background-color: grey;
-border: 5px solid black;
-margin-left: auto;
 }
