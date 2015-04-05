@@ -16,8 +16,8 @@ div.menu-accueil{
 background-color: yellow;
 }
 
-div.accueil{
+section.accueil{
 background-color: grey;
 border: 5px solid black;
-margin-left: auto;
+text-align:right;
 }
