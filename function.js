@@ -1,70 +1,45 @@
 $( document ).ready(function() {
-
-	var Adroitedut=false;
-	var Adroiteaccueil=false;
-	var Adroitelicence=false;
-	var Adroiteinfos=false;
-	$(".menu-dut").click(function(){
-		if(Adroitelicence=false)
-		{
-			$(".menu-licence").toggleClass("pull-right");
-			Adroitelicence=true;
-		}
-		if (Adroiteinfos=false)
-		{
-			$(".menu-infos").toggleClass("pull-right");
-			Adroiteinfos=true;
-		}
+	function toggleMenus() {
 		$("#accueil").toggleClass("hidden");
-		$("#dut").toggleClass("show");
+		$("#dut").toggleClass("hidden");
 		$("#licence").toggleClass("hidden");
-		$("#infos").toggleClass("hidden");
-
-	});
+		$("#infos").toggleClass("hidden");	
+	}
 	$(".menu-accueil").click(function(){
-		
-		if(Adroitelicence=false)
-		{
-			$(".menu-licence").toggleClass("pull-right");
-			Adroitelicence=true;
-		}
-		
-		if (Adroiteinfos=false)
-		{
-			
-			$(".menu-infos").toggleClass("pull-right");
-			Adroiteinfos=true;
-		}
-
-		
-		if (Adroitedut=false)
-		{
-			
-			$(".menu-dut").toggleClass("pull-right");
-			Adroitedut=true;
-		}
-		$("#accueil").toggleClass("show");
-		$("#dut").toggleClass("hidden");
-		$("#licence").toggleClass("hidden");
-		$("#infos").toggleClass("hidden");
+		$(".wrap1").addClass("pull-right");
+		$(".wrap2").addClass("pull-right");
+		$(".wrap3").addClass("pull-right");
+		$("#accueil").removeClass("hidden");
+		$("#dut").addClass("hidden");
+		$("#licence").addClass("hidden");
+		$("#infos").addClass("hidden");
 	});
+	$(".menu-dut").click(function(){
+		$(".wrap1").removeClass("pull-right");
+		$(".wrap2").addClass("pull-right");
+		$(".wrap3").addClass("pull-right");
+		$("#accueil").addClass("hidden");
+		$("#dut").removeClass("hidden");
+		$("#licence").addClass("hidden");
+		$("#infos").addClass("hidden");
+	});
+
 	$(".menu-licence").click(function(){
-		if (Adroiteinfos=false)
-		{
-			
-			$(".menu-infos").toggleClass("pull-right");
-			Adroiteinfos=true;
-		}
-		$("#accueil").toggleClass("hidden");
-		$("#dut").toggleClass("hidden");
-		$("#licence").toggleClass("show");
-		$("#infos").toggleClass("hidden");
+		$(".wrap1").removeClass("pull-right");
+		$(".wrap2").removeClass("pull-right");
+		$(".wrap3").addClass("pull-right");
+		$("#accueil").addClass("hidden");
+		$("#dut").addClass("hidden");
+		$("#licence").removeClass("hidden");
+		$("#infos").addClass("hidden");
 	});
 	$(".menu-infos").click(function(){
-		$("#accueil").toggleClass("hidden");
-		$("#dut").toggleClass("hidden");
-		$("#licence").toggleClass("hidden");
-		$("#infos").toggleClass("show");
-
+		$(".wrap1").removeClass("pull-right");
+		$(".wrap2").removeClass("pull-right");
+		$(".wrap3").removeClass("pull-right");
+		$("#accueil").addClass("hidden");
+		$("#dut").addClass("hidden");
+		$("#licence").addClass("hidden");
+		$("#infos").removeClass("hidden");
 	});
 });
