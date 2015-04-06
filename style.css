@@ -1,41 +1,46 @@
-div.menuCat{
-height: 100%;
-position: fixed;
-top: 0;
-width: 80px;
-}
-div.menu-infos{
-background-color: red;
-}
-div.menu-dut{
-background-color: blue;
-
-}
-div.menu-licence{
-background-color: green;
-
-}
-div.menu-accueil{
-background-color: yellow;
-
-}
-
-div#accueildiv{
-	background-color: grey;
-	border: 5px solid black;
-	text-align:left;
-	margin-left:10%;
-	margin-right:22%;
-	opacity:50%;
-}
 .bigHeight{
 	margin-top: 100px;
 }
-
-
-/*div#panorama
-{
-	border: 2px solid black;
-	border-radius: 10px;
-   
-}*/
+.menu{
+	width: 15%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	padding-left: 10px;
+  border-width: 1px;
+  border-right-style: solid;
+  border-color: white;
+  background-color: grey;
+  padding-right: 10px;
+  text-align: center;
+}
+.content{
+	position: absolute;
+	left: 300px;
+	right: 10px;
+	top: 10px;
+}
+#dut{
+	display: none;
+}
+#licence{
+	display: none;
+}
+#infos{
+	display: none;
+}	
+.sousmenu{
+	display: none;
+}
+a.scrollTo{
+	color: white;
+}
+img.iut_logo{
+	width: 80%;
+}
+.menu_souselts{
+	display: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

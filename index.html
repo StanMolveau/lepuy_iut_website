@@ -15,7 +15,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<script src="function.js"></script>
+	<script src="functions.js"></script>
 	<!-- on placera a la fin du fichier normalement pour accélerer le chargement des pages -->
 	<title>IUT Le Puy en Velay</title>
 </head>
@@ -23,100 +23,84 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="menu">
-			<div class="menuCat menu-accueil col-md-3">
-				Accueil
-			</div>
-			<div class="wrap1">
-				<div class="menuCat menu-dut col-md-3">
-					DUT
-					<div class="sousmenu-dut hidden">
-						<ul>
-							<li><a class="scrollTo" href="#dut_presentation">Présentation</a></li>
-							<li class="dropdown">
-								<a href="#" data-toggle="dropdown" class="dropdown-toggle">Cursus<b class="caret"></b></a>
-								<ul class="dropdown-menu pull-left">
-									<li><a class="scrollTo" href="#dut_premiereannee">Première année</a></li>	
-									<li><a class="scrollTo" href="#dut_deuxiemeannee">Deuxième année</a></li>	
-								</ul>
-							</li>
-							<li class="dropdown">
-								<a href="#" data-toggle="dropdown" class="dropdown-toggle">Etudier à l'IUT<b class="caret"></b></a>
-								<ul class="dropdown-menu pull-left">
-									<li><a class="scrollTo" href="#dut_etreetudiant">Etre étudiant à l'IUT</a></li>	
-									<li><a class="scrollTo" href="#dut_paroles">Paroles d'étudiants</a></li>
-								</ul>
-							</li>
-							<li class="dropdown">
-								<a href="#" data-toggle="dropdown" class="dropdown-toggle">Apres le DUT<b class="caret"></b></a>
-								<ul class="dropdown-menu pull-left">
-									<li><a class="scrollTo" href="#dut_possibilites">Les possibilités</a></li>
-									<li><a class="scrollTo" href="#dut_poursuite">La poursuite d'études</a></li>
-									<li><a class="scrollTo" href="#dut_parcours">Exemples de parcours</a></li>
-								</ul>
-							</li>
-							<li><a class="scrollTo" href="#dut_conditions">Conditions d'admission</a></li>
-							<li><a class="scrollTo" href="#dut_travaux">Travaux d'étudiants	</a></li>
-							<li><a class="scrollTo" href="#dut_faq">FAQ</a></li>
-						</ul>
+				<div class="logo">
+					<a href=""><img class="iut_logo" src="images/iut_logo.jpg" alt="logo iut imagerie numérique"></a>
+				</div>
+				<div class="menu-accueil">
+					<h3><a class="scrollTo link_accueil" href="#accueil">Accueil</a></h3>
+				</div>
+				<div class="menu-dut">
+					<h3><a class="scrollTo link_dut" href="#dut">DUT</a></h3>
+					<div class="sousmenu sousmenu-dut">
+						<a class="scrollTo link_dut" href="#dut_presentation">Présentation</a><br />
+						<div class="link_list"><a class="scrollTo link_dut" href="#dut_cursus">Cursus</a><b class="caret"></b><br />
+							<div class="menu_souselts">
+							<a class="scrollTo link_dut" href="#dut_premiereannee">Première année</a><br />
+							<a class="scrollTo link_dut" href="#dut_deuxiemeannee">Deuxième année</a><br />	
+							</div>
+						</div>
+						<div class="link_list"><a class="scrollTo link_dut" href="#dut_etudier" >Etudier à l'IUT</a><b class="caret"></b><br />
+							<div class="menu_souselts">
+							<a class="scrollTo link_dut" href="#dut_etreetudiant">Etre étudiant à l'IUT</a><br />	
+							<a class="scrollTo link_dut" href="#dut_paroles">Paroles d'étudiants</a><br />
+							</div>
+						</div>
+						<div class="link_list"><a class="scrollTo link_dut" href="#dut_apres" >Apres le DUT</a><b class="caret"></b><br />
+							<div class="menu_souselts">
+							<a class="scrollTo link_dut" href="#dut_possibilites">Les possibilités</a><br />
+							<a class="scrollTo link_dut" href="#dut_poursuite">La poursuite d'études</a><br />
+							<a class="scrollTo link_dut" href="#dut_parcours">Exemples de parcours</a><br />
+							</div>
+						</div>
+						<a class="scrollTo link_dut" href="#dut_conditions">Conditions d'admission</a><br />
+						<a class="scrollTo link_dut" href="#dut_travaux">Travaux d'étudiants</a><br />
+						<a class="scrollTo link_dut" href="#dut_faq">FAQ</a><br />
 					</div> <!-- fin sousmenu-dut -->
-				</div><!-- fin menu-dut -->
-				<div class="wrap2">
-					<div class="menuCat menu-licence col-md-3">
-						Licence
-						<div class="sousmenu-licence hidden">
-							<ul>
-								<li><a href="">Licence</a></li>
-								<li><a href="">Présentation</a></li>
-								<li><a href="">Objectifs</a></li>
-								<li class="dropdown">
-									<a href="#" data-toggle="dropdown" class="dropdown-toggle">Alternance<b class="caret"></b></a>
-									<ul class="dropdown-menu pull-right">
-										<li><a href="#">La formation par alternance</a>	</li>
-										<li><a href="#">Contrat d'Apprentissage</a>	</li>
-										<li><a href="#">Statut et Rémunération</a>	</li>
-										<li><a href="#">Recrutement en entreprise</a></li>
-									</ul>
-								</li>
-								<li class="dropdown">
-									<a href="#" data-toggle="dropdown" class="dropdown-toggle">La Formation<b class="caret"></b></a>
-									<ul class="dropdown-menu pull-right">
-										<li><a href="#">Trois parcours possibles</a></li>
-										<li><a href="#">Architecture 3D</a>	</li>
-										<li><a href="#">Technical Artist</a></li>	
-										<li><a href="#">3D Temps Réel</a></li>
-									</ul>
-								</li>
-								<li><a href="">Conditions d'admission</a></li>
-								<li><a href="">FAQ</a></li>
-							</ul>
+				</div> <!-- fin menu dut -->
+				<div class="menu-licence">
+						<h3><a href="#licence" class="scrollTo link_licence">Licence</a></h3>
+						<div class="sousmenu sousmenu-licence"><a class="scrollTo link_licence" href="#licence_licence">Licence</a><br />
+							<a class="scrollTo link_licence" href="#licence_presentation">Présentation</a><br />
+							<a class="scrollTo link_licence" href="#licence_objectifs">Objectifs</a><br />
+							<div class="link_list"><a class="scrollTo link_licence" href="#licence_alternance" >Alternance</a><b class="caret"></b><br />
+								<div class="menu_souselts">
+								<a class="scrollTo link_licence" href="#licence_formation">La formation par alternance</a><br />	
+								<a class="scrollTo link_licence" href="#licence_contrat">Contrat d'Apprentissage</a><br />	
+								<a class="scrollTo link_licence" href="#licence_statut">Statut et Rémunération</a><br />	
+								<a class="scrollTo link_licence" href="#licence_recrutement">Recrutement en entreprise</a><br />
+								</div>
+							</div>
+							<div class="link_list"><a class="scrollTo link_licence" href="#licence_formation2">La Formation</a><b class="caret"></b><br />
+								<div class="menu_souselts">
+								<a class="scrollTo link_licence" href="#licence_parcours">Trois parcours possibles</a><br />
+								<a class="scrollTo link_licence" href="#licence_architecture">Architecture 3D</a><br />	
+								<a class="scrollTo link_licence" href="#licence_technical">Technical Artist</a>	<br />
+								<a class="scrollTo link_licence" href="#licence_3drt">3D Temps Réel</a><br />
+								</div>
+							</div>
+							<a class="scrollTo link_licence" href="#licence_conditions">Conditions d'admission</a><br />
+							<a class="scrollTo link_licence" href="#licence_faq">FAQ</a><br />
 						</div><!-- fin sousmenu-licence -->
 					</div> <!-- fin menu-licence -->
-					<div class="wrap3">
-						<div class="menuCat menu-infos col-md-3" >
-							Infos
-							<div class="sousmenu-infos hidden">
-								<ul>
-									<li><a href="">Informations</a></li>
-									<li><a href="">Candidater</a></li>
-									<li class="dropdown">
-										<a href="#" data-toggle="dropdown" class="dropdown-toggle">Être étudiant au Puy<b class="caret"></b></a>
-										<ul class="dropdown-menu pull-right">
-											<li><a href="#">Vivre au Puy-en-Velay</a></li>
-											<li><a href="#">Se loger</a></li>
-											<li><a href="#">Les aides</a></li>
-										</ul>
-									</li>
-									<li><a href="">Nous contacter</a></li>
-									<li><a href="">Plan d'accès</a></li>
-								</ul>
+					<div class="menu-infos" >
+							<h3><a href="#infos" class="scrollTo link_infos">Infos</a></h3>
+							<div class="sousmenu sousmenu-infos">
+								<a class="scrollTo link_infos" href="#infos_informations">Informations</a><br />
+								<a class="scrollTo link_infos" href="#infos_candidater">Candidater</a><br />
+								<div class="link_list"><a class="scrollTo link_infos" href="#infos_etreetudiant" >Être étudiant au Puy</a><b class="caret"></b><br />
+									<div class="menu_souselts">
+									<a class="scrollTo link_infos" href="#infos_vivre">Vivre au Puy-en-Velay</a><br />
+									<a class="scrollTo link_infos" href="#infos_seloger">Se loger</a><br />
+									<a class="scrollTo link_infos" href="#infos_aides">Les aides</a><br />
+									</div>
+								</div>
+								<a class="scrollTo link_infos" href="#licence_contact">Nous contacter</a><br />
+								<a class="scrollTo link_infos" href="#licence_plan">Plan d'accès</a><br />
 							</div> <!-- fin sousmenu-infos -->
 						</div> <!-- fin menu-infos -->
-					</div><!-- fin wrap 3 --> 
-				</div><!-- fin wrap2 -->
-			</div> <!-- fin wrap 1 -->
-			</div> <!-- fin div menu -->
-			<div class="content col-md-8">
-			<section id="accueil" class="hidden">
+			</div> <!-- fin menu -->
+			<div class="content">
+			<section id="accueil">
 				<div id="panorama">
 					<img align="center"src="images\lePuy.jpg" alt="Panorama" height="30%" width="74%">
 				</div>
@@ -126,15 +110,15 @@
 						Le département Informatique - Imagerie Numérique de l'IUT du Puy-en-Velay vous propose deux diplômes universitaires, dont la qualité est reconnue par les professionnels du secteur :<br/><br/>
 
 					<ul style="list-style-type:circle">
-						<li>Un DUT informatique en Imagerie Numérique</li>
-						<li>Une Licence Professionnelle Imagerie Numérique en alternance</li>
-					</ul><br/>
+						Un DUT informatique en Imagerie Numérique
+						Une Licence Professionnelle Imagerie Numérique en alternance
+					<br/>
 
 					Avec ces deux cursus, l'IUT Informatique et Imagerie numérique du Puy-en-Velay est l'un des seuls sites en France offrant une formation complète en 3 ans dans le domaine de l’image.</p>	
 				</div>
 			</section> <!-- fin section accueil -->
 
-			<section id="dut" class="hidden">
+			<section id="dut">
 				Un DUT pleinement image !
 
 				Un Cursus en deux ans qui vous permettra :
@@ -160,7 +144,7 @@
 
 			</section> <!-- fin section dut -->
 
-			<section id="licence" class="hidden">
+			<section id="licence">
 				La licence professionelle: une formation par alternance
 
 				La licence informatique Systèmes Informatiques et Logiciels option image et son...
@@ -175,7 +159,7 @@
 
 			</section> <!-- fin section licence -->
 
-			<section id="infos" class="hidden">
+			<section id="infos">
 
 				Vivre au Puy en Velay
 
@@ -200,10 +184,8 @@
 				Mairie du Puy
 				Zoom43   (Portail d'information de la Haute-Loire)
 
-			</section> <!-- fin section infos -->
-			</div> <!-- fin div content -->
-		</div> <!-- fin row-->
-	</div> <!-- fin container-fluid -->
-<!-- script statcounter // script googleanalytics -->
+			</section>
+			</div>
+	</div>
 </body>
 </html>
