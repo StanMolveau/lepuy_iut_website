@@ -12,10 +12,10 @@ function show(element){
 $( document ).ready(function() {
 	$(".link_list").hover(
 		function(){
-		$(this).children('.menu_souselts').show(1000);
+		$(this).children('.menu_souselts').stop().show(1000);
 		},
 		function(){
-		$(this).children('.menu_souselts').hide(1000);	
+		$(this).children('.menu_souselts').stop().hide(1000);	
 		}
 	);
 	$(".link_accueil").click(function(){
