@@ -1,5 +1,8 @@
 div.menuCat{
 height: 100%;
+position: fixed;
+top: 0;
+width: 80px;
 }
 div.menu-infos{
 background-color: red;
