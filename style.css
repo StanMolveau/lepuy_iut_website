@@ -8,14 +8,18 @@
 	left: 0;
 	height: 100%;
 	padding-left: 10px;
+  border-width: 1px;
+  border-right-style: solid;
+  border-color: white;
   background-color: grey;
   padding-right: 10px;
   text-align: center;
 }
 .content{
 	position: absolute;
-	left: 15%;
-	top: 0;
+	left: 300px;
+	right: 20px;
+	top: 10px;
 }
 #dut{
 	display: none;
@@ -39,11 +43,4 @@ img.iut_logo{
 	display: none;
 	padding-top: 10px;
 	padding-bottom: 10px;
-}
-img.slider{
-	width: 100%;
-}
-#map{
-	width: 100%;
-	height: 450px;
 }
