@@ -5,9 +5,10 @@ $(document).ready(function() {
 		$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
 		return false;
 	});
-var map = L.map('map').setView([45.040431, 3.881388], 13);
 });
+function show(element){
 
+}
 $( document ).ready(function() {
 	$(".link_list").hover(
 		function(){
@@ -21,37 +22,37 @@ $( document ).ready(function() {
 		$(".sousmenu-dut").hide("slow");
 		$(".sousmenu-licence").hide("slow");
 		$(".sousmenu-infos").hide("slow");
-		$("#accueil").show("slow");
-		$("#dut").hide("slow");
-		$("#licence").hide("slow");
-		$("#infos").hide("slow");
+		$("#accueil").show();
+		$("#dut").hide();
+		$("#licence").hide();
+		$("#infos").hide();
 	});
 	$(".link_dut").click(function(){
 		$(".sousmenu-dut").show("slow");
 		$(".sousmenu-licence").hide("slow");
 		$(".sousmenu-infos").hide("slow");
-		$("#accueil").hide("slow");
-		$("#dut").show("slow");
-		$("#licence").hide("slow");
-		$("#infos").hide("slow");
+		$("#accueil").hide();
+		$("#dut").show();
+		$("#licence").hide();
+		$("#infos").hide();
 	});
 	$(".link_licence").click(function(){
 		$(".sousmenu-dut").hide("slow");
 		$(".sousmenu-licence").show("slow");
 		$(".sousmenu-infos").hide("slow");
-		$("#accueil").hide("slow");
-		$("#dut").hide("slow");
-		$("#licence").show("slow");
-		$("#infos").hide("slow");
+		$("#accueil").hide();
+		$("#dut").hide();
+		$("#licence").show();
+		$("#infos").hide();
 	});
 	$(".link_infos").click(function(){
 		$(".sousmenu-dut").hide("slow");
 		$(".sousmenu-licence").hide("slow");
 		$(".sousmenu-infos").show("slow");
-		$("#accueil").hide("slow");
-		$("#dut").hide("slow");
-		$("#licence").hide("slow");
-		$("#infos").show("slow");
+		$("#accueil").hide();
+		$("#dut").hide();
+		$("#licence").hide();
+		$("#infos").show();
 	});
 
 });
