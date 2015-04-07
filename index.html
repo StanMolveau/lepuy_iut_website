@@ -3,7 +3,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:image" content="http://www.florentlamoureux.fr/fb.png"/>
+	<meta property="og:image" content="images/iut_logo.jpg"/>
 	<meta property="og:title" content="IUT Le Puy en Velay - France"/>
 	<meta property="og:description" content="website IUT Le Puy en Velay - FR"/>
 	<meta property="og:url" content="http://info-lepuy.fr/"/>
@@ -16,12 +16,13 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script src="functions.js"></script>
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 	<!-- on placera a la fin du fichier normalement pour accélerer le chargement des pages -->
 	<title>IUT Le Puy en Velay</title>
 </head>
 <body>
 	<div class="container-fluid">
-<<<<<<< HEAD
 		<div class="row">
 			<div class="menu">
 				<div class="logo">
@@ -95,104 +96,15 @@
 									<a class="scrollTo link_infos" href="#infos_aides">Les aides</a><br />
 									</div>
 								</div>
-								<a class="scrollTo link_infos" href="#licence_contact">Nous contacter</a><br />
-								<a class="scrollTo link_infos" href="#licence_plan">Plan d'accès</a><br />
+								<a class="scrollTo link_infos" href="#infos_contact">Nous contacter</a><br />
+								<a class="scrollTo link_infos" href="#infos_plan">Plan d'accès</a><br />
 							</div> <!-- fin sousmenu-infos -->
 						</div> <!-- fin menu-infos -->
 			</div> <!-- fin menu -->
 			<div class="content">
 			<section id="accueil">
-=======
-		<div class="menu row">
-			<div class="menuCat menu-accueil col-md-3" >
-				Accueil
-			</div>
-			<div class="wrap1">
-				<div class="menuCat menu-dut col-md-3"  >
-					DUT
-					<div class="sousmenu-dut hidden">
-						<ul>
-							<li><a href="">Présentation</a></li>
-							<li>Cursus
-								<ul>
-									<li><a href="">Première année</a></li>	
-									<li><a href="">Deuxième année</a></li>	
-								</ul>
-							</li>
-							<li>Etudier à l'IUT
-								<ul>
-									<li><a href="">Etre étudiant à l'IUT</a></li>	
-									<li><a href="">Paroles d'étudiants</a></li>
-								</ul>
-							</li>
-							<li>Après le DUT
-								<ul>
-									<li><a href="">Les possibilités</a></li>
-									<li><a href="">La poursuite d'études</a></li>
-									<li><a href="">Exemples de parcours</a></li>
-								</ul>
-							</li>
-							<li><a href="">Conditions d'admission</a></li>
-							<li><a href="">Travaux d'étudiants	</a></li>
-							<li><a href="">FAQ</a></li>
-						</ul>
-					</div> <!-- fin sousmenu-dut -->
-				</div> <!-- fin menu-dut -->
-				<div class="wrap2">
-					<div class="menuCat menu-licence col-md-3">
-						Licence
-						<div class="sousmenu-licence hidden">
-							<ul>
-								<li><a href="">Licence</a></li>
-								<li><a href="">Présentation</a></li>
-								<li><a href="">Objectifs</a></li>
-								<li>Alternance
-									<ul>
-										<li><a href="">La formation par alternance</a>	</li>
-										<li><a href="">Contrat d'Apprentissage</a>	</li>
-										<li><a href="">Statut et Rémunération</a>	</li>
-										<li><a href="">Recrutement en entreprise</a></li>
-									</ul>
-								</li>
-								<li>La formation
-									<ul>
-										<li><a href="">Trois parcours possibles</a></li>
-										<li><a href="">Architecture 3D</a>	</li>
-										<li><a href="">Technical Artist<</a>/li>	
-										<li><a href="">3D Temps Réel</a></li>
-									</ul>
-								</li>
-								<li><a href="">Conditions d'admission</a></li>
-								<li><a href="">FAQ</a></li>
-							</ul>
-						</div><!-- fin sousmenu-licence -->
-					</div> <!-- fin menu-licence -->
-					<div class="wrap3">
-						<div class="menuCat menu-infos col-md-3" >
-							Infos
-							<div class="sousmenu-infos hidden">
-							<ul>
-								<li><a href="">Informations</a></li>
-								<li><a href="">Candidater</a></li>
-								<li>Être étudiant au Puy
-									<ul>
-										<li><a href="">Vivre au Puy-en-Velay</a></li>
-										<li><a href="">Se loger</a></li>
-										<li><a href="">Les aides</a></li>
-									</ul>
-								</li>
-								<li><a href="">Nous contacter</a></li>
-								<li><a href="">Plan d'accès</a></li>
-							</ul>
-							</div> <!-- fin sousmenu-infos -->
-						</div> <!-- fin menu-infos -->
-					</div> <!-- fin wrap 3 -->
-				</div> <!-- fin wrap2 -->
-			</div> <!-- fin wrap 1 -->
-			<section id="accueil" class="hidden">
->>>>>>> parent of a92bf68... Sous menu dropdown
 				<div id="panorama">
-					<img align="center"src="images\lePuy.jpg" alt="Panorama" height="30%" width="74%">
+					<img class="slider" align="center"src="images/lePuy.jpg" alt="Panorama">
 				</div>
 				<h1 align="center">Accueil</h1>
 				<div id="accueildiv">
@@ -208,7 +120,7 @@
 				</div>
 			</section> <!-- fin section accueil -->
 
-			<section id="dut">
+			<section id="dut" align="center">
 				Un DUT pleinement image !
 
 				Un Cursus en deux ans qui vous permettra :
@@ -241,7 +153,7 @@
 
 			</section> <!-- fin section dut -->
 
-			<section id="licence">
+			<section id="licence" align="center">
 				La licence professionelle: une formation par alternance
 
 				La licence informatique Systèmes Informatiques et Logiciels option image et son...
@@ -253,10 +165,28 @@
 				Objectifs
 
 				La licence informatique SIL est spécialisée dans l’imagerie numérique et couvre les domaines de la modélisation 3D, l'animation, l'infographie 2D et 3D, ainsi que le développement d'applications en 3D temps réel (jeux, réalité virtuelle, ...).
+					<div class="bigHeight" id="licence_licence">LICENCE</div>
+					<div class="bigHeight" id="licence_presentation">PRESETATION</div>
+					<div class="bigHeight" id="licence_objectifs">OBJECTIFS</div>
+					<div class="bigHeight" id="licence_alternance">
+						<div class="bigHeight" id="licence_formation">FORMATION</div>
+						<div class="bigHeight" id="licence_contrat">CONTRAT</div>
+						<div class="bigHeight" id="licence_statut">STATUT</div>
+						<div class="bigHeight" id="licence_recrutement">RECRUTEMENT</div>
+					</div>
+					<div class="bigHeight" id="licence_formation2">
+						<div class="bigHeight" id="licence_parcours">PARCOURS</div>
+						<div class="bigHeight" id="licence_architecture">ARCHITECTUYRE</div>
+						<div class="bigHeight" id="licence_technical">TECHNICAL</div>
+						<div class="bigHeight" id="licence_3drt">3DRT</div>
+					</div>
+					<div class="bigHeight" id="licence_conditions">CONDITIONS</div>
+					<div class="bigHeight" id="licence_faq">FAQ</div>
+
 
 			</section> <!-- fin section licence -->
 
-			<section id="infos">
+			<section id="infos" align="center">
 
 				Vivre au Puy en Velay
 
@@ -280,6 +210,18 @@
 				Office du tourisme
 				Mairie du Puy
 				Zoom43   (Portail d'information de la Haute-Loire)
+
+				<div class="bigHeight" id="infos_informations">INFORMATIONS</div>
+				<div class="bigHeight" id="infos_candidater">CANDIDATER</div>
+				<div class="bigHeight" id="infos_etreetudiant">
+					<div class="bigHeight" id="infos_vivre">VIVRE</div>
+					<div class="bigHeight" id="infos_seloger">SELOGER</div>
+					<div class="bigHeight" id="infos_aider">AIDER</div>
+				</div>
+				<div class="bigHeight" id="infos_contact">CONTACT</div>
+				<div class="bigHeight" id="infos_plan">PLAN<br />
+				<div id="map"></div>
+				</div>
 
 			</section>
 			</div>
