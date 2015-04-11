@@ -1,21 +1,22 @@
-.bigHeight{
-	margin-top: 100px;
+.menu-carre{
+	background-color: grey;
+	border: 5px;
+	border-color: white;
+	border-style: solid;
 }
 .menu{
-	width: 15%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100%;
-	padding-left: 10px;
-  background-color: grey;
-  padding-right: 10px;
-  text-align: center;
+	clear: both;	
+	width: 90%;	
+	margin: auto;
 }
-.content{
-	position: absolute;
-	left: 15%;
-	top: 0;
+.site{
+	color: white;
+	height: 100%;
+  	background: url('../images/LePuy_flou.png') no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 }
 #dut{
 	display: none;
@@ -25,9 +26,28 @@
 }
 #infos{
 	display: none;
-}	
-.sousmenu{
+}
+.bigHeight{
+	margin-top: 200px;
+}
+#menu2{
 	display: none;
+}
+.content{
+	position: absolute;
+	left: 15%;
+	top: 0;
+}
+#menu2{
+	width: 15%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	padding-left: 10px;
+  background-color: grey;
+  padding-right: 10px;
+  text-align: center;
 }
 a.scrollTo{
 	color: white;

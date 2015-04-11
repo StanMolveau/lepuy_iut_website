@@ -21,6 +21,7 @@ $( document ).ready(function() {
 		$(".sousmenu-dut").hide("slow");
 		$(".sousmenu-licence").hide("slow");
 		$(".sousmenu-infos").hide("slow");
+		$("#menu2").hide("slow");
 		$("#accueil").show("slow");
 		$("#dut").hide("slow");
 		$("#licence").hide("slow");
@@ -31,6 +32,7 @@ $( document ).ready(function() {
 		$(".sousmenu-licence").hide("slow");
 		$(".sousmenu-infos").hide("slow");
 		$("#accueil").hide("slow");
+		$("#menu2").show("slow");
 		$("#dut").show("slow");
 		$("#licence").hide("slow");
 		$("#infos").hide("slow");
@@ -39,6 +41,7 @@ $( document ).ready(function() {
 		$(".sousmenu-dut").hide("slow");
 		$(".sousmenu-licence").show("slow");
 		$(".sousmenu-infos").hide("slow");
+		$("#menu2").show("slow");
 		$("#accueil").hide("slow");
 		$("#dut").hide("slow");
 		$("#licence").show("slow");
@@ -48,6 +51,7 @@ $( document ).ready(function() {
 		$(".sousmenu-dut").hide("slow");
 		$(".sousmenu-licence").hide("slow");
 		$(".sousmenu-infos").show("slow");
+		$("#menu2").show("slow");
 		$("#accueil").hide("slow");
 		$("#dut").hide("slow");
 		$("#licence").hide("slow");

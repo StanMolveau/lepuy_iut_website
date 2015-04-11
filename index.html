@@ -1,34 +1,101 @@
 <html lang="fr">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:image" content="images/iut_logo.jpg"/>
-	<meta property="og:title" content="IUT Le Puy en Velay - France"/>
-	<meta property="og:description" content="website IUT Le Puy en Velay - FR"/>
-	<meta property="og:url" content="http://info-lepuy.fr/"/>
-	<meta property="og:type" content="website">
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<!-- ajout bootstrap et jquery -->
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/leaflet.js"></script>
-	<script src="js/functions.js"></script>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="leaflet.css">
-	<link rel="stylesheet" href="style.css">
-	<!-- on placera a la fin du fichier normalement pour accélerer le chargement des pages -->
-	<title>IUT Le Puy en Velay</title>	
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:image" content="images/iut_logo.jpg"/>
+		<meta property="og:title" content="IUT Le Puy en Velay - France"/>
+		<meta property="og:description" content="website IUT Le Puy en Velay - FR"/>
+		<meta property="og:url" content="http://info-lepuy.fr/"/>
+		<meta property="og:type" content="website">
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<!-- ajout bootstrap et jquery -->
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/leaflet.js"></script>
+		<script src="js/functions.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/leaflet.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<!-- on placera a la fin du fichier normalement pour accélerer le chargement des pages -->
+		<title>IUT Le Puy en Velay</title>	
 </head>
 <body>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="menu">
+<div class="site container-fluid">
+	<section id="accueil">
+		<div class="row text-center">
+				<h2>Accueil</h2>
+			<div id="accueildiv">
+				<p align="center">
+					Le département Informatique - Imagerie Numérique de l'IUT du Puy-en-Velay vous propose deux diplômes universitaires, dont la qualité est reconnue par les professionnels du secteur :<br/><br/>
+
+				<ul style="list-style-type:circle">
+					Un DUT informatique en Imagerie Numérique
+					Une Licence Professionnelle Imagerie Numérique en alternance
+				<br/>
+
+				Avec ces deux cursus, l'IUT Informatique et Imagerie numérique du Puy-en-Velay est l'un des seuls sites en France offrant une formation complète en 3 ans dans le domaine de l’image.</p>	
+			</div><!-- fin section accueil -->
+		</div> <!-- fin row -->
+		<div class="row menu text-center" id="menu">
+		<section class="menu-carre col-xs-4 center-block">
+			<h2>DUT</h2>
+			<i class="fa fa-circle-thin fa-4x link_dut"></i>
+				<ul>
+					<li>
+						<a target="_blank" href="http://doc.qt.io/qt-5/gettingstarted.html">Installation</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://doc.qt.io/qt-5/qtexamplesandtutorials.html">Examples &amp; tutorials</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://doc.qt.io/qt-5/topics-app-development.html">Tools</a>
+					</li>                
+				</ul>
+				<p><a href="/download/" class="btn btn-narrow btn-dark">Download now</a></p>            
+		</section>
+		<section class="menu-carre col-xs-4 center-block">
+			<h2>Licence</h2>
+			<i class="fa fa-circle-thin fa-4x link_licence"></i>
+			<ul>
+				<li>
+					<a target="_blank" href="http://doc.qt.io/qt-5/gettingstarted.html">Installation</a>
+				</li>
+				<li>
+					<a target="_blank" href="http://doc.qt.io/qt-5/qtexamplesandtutorials.html">Examples &amp; tutorials</a>
+				</li>
+				<li>
+					<a target="_blank" href="http://doc.qt.io/qt-5/topics-app-development.html">Tools</a>
+				</li>                
+			</ul>
+			<p><a href="/download/" class="btn btn-narrow btn-dark">Download now</a></p>
+		</section>
+		<section class="menu-carre col-xs-4 center-block">
+				<h2>Informations générales</h2>
+				<i class="fa fa-circle-thin fa-4x link_infos"></i>
+				<ul>
+					<li>
+						<a target="_blank" href="http://doc.qt.io/qt-5/gettingstarted.html">Installation</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://doc.qt.io/qt-5/qtexamplesandtutorials.html">Examples &amp; tutorials</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://doc.qt.io/qt-5/topics-app-development.html">Tools</a>
+					</li>                
+				</ul>
+				<p><a href="/download/" class="btn btn-narrow btn-dark">Download now</a></p>
+		</section>
+		</div> <!-- fin menu -->
+	</section><!-- fin section accueil -->
+	<div class="content">
+		<section id="menu2">
 				<div class="logo">
 					<a href=""><img class="iut_logo" src="images/iut_logo.jpg" alt="logo iut imagerie numérique"></a>
 				</div>
 				<div class="menu-accueil">
-					<h3><a class="scrollTo link_accueil" href="#accueil">Accueil</a></h3>
+					<h3><a class="scrollTo link_accueil" href="">Accueil</a></h3>
 				</div>
 				<div class="menu-dut">
 					<h3><a class="scrollTo link_dut" href="#dut">DUT</a></h3>
@@ -36,21 +103,21 @@
 						<a class="scrollTo link_dut" href="#dut_presentation">Présentation</a><br />
 						<div class="link_list"><a class="scrollTo link_dut" href="#dut_cursus">Cursus</a><b class="caret"></b><br />
 							<div class="menu_souselts">
-							<a class="scrollTo link_dut" href="#dut_premiereannee">Première année</a><br />
-							<a class="scrollTo link_dut" href="#dut_deuxiemeannee">Deuxième année</a><br />	
+								<a class="scrollTo link_dut" href="#dut_premiereannee">Première année</a><br />
+								<a class="scrollTo link_dut" href="#dut_deuxiemeannee">Deuxième année</a><br />	
 							</div>
 						</div>
 						<div class="link_list"><a class="scrollTo link_dut" href="#dut_etudier" >Etudier à l'IUT</a><b class="caret"></b><br />
 							<div class="menu_souselts">
-							<a class="scrollTo link_dut" href="#dut_etreetudiant">Etre étudiant à l'IUT</a><br />	
-							<a class="scrollTo link_dut" href="#dut_paroles">Paroles d'étudiants</a><br />
+								<a class="scrollTo link_dut" href="#dut_etreetudiant">Etre étudiant à l'IUT</a><br />	
+								<a class="scrollTo link_dut" href="#dut_paroles">Paroles d'étudiants</a><br />
 							</div>
 						</div>
 						<div class="link_list"><a class="scrollTo link_dut" href="#dut_apres" >Apres le DUT</a><b class="caret"></b><br />
 							<div class="menu_souselts">
-							<a class="scrollTo link_dut" href="#dut_possibilites">Les possibilités</a><br />
-							<a class="scrollTo link_dut" href="#dut_poursuite">La poursuite d'études</a><br />
-							<a class="scrollTo link_dut" href="#dut_parcours">Exemples de parcours</a><br />
+								<a class="scrollTo link_dut" href="#dut_possibilites">Les possibilités</a><br />
+								<a class="scrollTo link_dut" href="#dut_poursuite">La poursuite d'études</a><br />
+								<a class="scrollTo link_dut" href="#dut_parcours">Exemples de parcours</a><br />
 							</div>
 						</div>
 						<a class="scrollTo link_dut" href="#dut_conditions">Conditions d'admission</a><br />
@@ -59,24 +126,26 @@
 					</div> <!-- fin sousmenu-dut -->
 				</div> <!-- fin menu dut -->
 				<div class="menu-licence">
-						<h3><a href="#licence" class="scrollTo link_licence">Licence</a></h3>
-						<div class="sousmenu sousmenu-licence"><a class="scrollTo link_licence" href="#licence_licence">Licence</a><br />
-							<a class="scrollTo link_licence" href="#licence_presentation">Présentation</a><br />
-							<a class="scrollTo link_licence" href="#licence_objectifs">Objectifs</a><br />
-							<div class="link_list"><a class="scrollTo link_licence" href="#licence_alternance" >Alternance</a><b class="caret"></b><br />
-								<div class="menu_souselts">
+					<h3><a href="#licence" class="scrollTo link_licence">Licence</a></h3>
+					<div class="sousmenu sousmenu-licence">
+						<a class="scrollTo link_licence" href="#licence_licence">Licence</a><br />
+						<a class="scrollTo link_licence" href="#licence_presentation">Présentation</a><br />
+						<a class="scrollTo link_licence" href="#licence_objectifs">Objectifs</a><br />
+						<div class="link_list"><a class="scrollTo link_licence" href="#licence_alternance" >Alternance</a><b class="caret"></b><br />
+							<div class="menu_souselts">
 								<a class="scrollTo link_licence" href="#licence_formation">La formation par alternance</a><br />	
 								<a class="scrollTo link_licence" href="#licence_contrat">Contrat d'Apprentissage</a><br />	
 								<a class="scrollTo link_licence" href="#licence_statut">Statut et Rémunération</a><br />	
 								<a class="scrollTo link_licence" href="#licence_recrutement">Recrutement en entreprise</a><br />
-								</div>
 							</div>
-							<div class="link_list"><a class="scrollTo link_licence" href="#licence_formation2">La Formation</a><b class="caret"></b><br />
+							</div>
+							<div class="link_list">
+							<a class="scrollTo link_licence" href="#licence_formation2">La Formation</a><b class="caret"></b><br />
 								<div class="menu_souselts">
-								<a class="scrollTo link_licence" href="#licence_parcours">Trois parcours possibles</a><br />
-								<a class="scrollTo link_licence" href="#licence_architecture">Architecture 3D</a><br />	
-								<a class="scrollTo link_licence" href="#licence_technical">Technical Artist</a>	<br />
-								<a class="scrollTo link_licence" href="#licence_3drt">3D Temps Réel</a><br />
+									<a class="scrollTo link_licence" href="#licence_parcours">Trois parcours possibles</a><br />
+									<a class="scrollTo link_licence" href="#licence_architecture">Architecture 3D</a><br />	
+									<a class="scrollTo link_licence" href="#licence_technical">Technical Artist</a>	<br />
+									<a class="scrollTo link_licence" href="#licence_3drt">3D Temps Réel</a><br />
 								</div>
 							</div>
 							<a class="scrollTo link_licence" href="#licence_conditions">Conditions d'admission</a><br />
@@ -84,75 +153,56 @@
 						</div><!-- fin sousmenu-licence -->
 					</div> <!-- fin menu-licence -->
 					<div class="menu-infos" >
-							<h3><a href="#infos" class="scrollTo link_infos">Infos</a></h3>
-							<div class="sousmenu sousmenu-infos">
-								<a class="scrollTo link_infos" href="#infos_informations">Informations</a><br />
-								<a class="scrollTo link_infos" href="#infos_candidater">Candidater</a><br />
-								<div class="link_list"><a class="scrollTo link_infos" href="#infos_etreetudiant" >Être étudiant au Puy</a><b class="caret"></b><br />
-									<div class="menu_souselts">
-									<a class="scrollTo link_infos" href="#infos_vivre">Vivre au Puy-en-Velay</a><br />
-									<a class="scrollTo link_infos" href="#infos_seloger">Se loger</a><br />
-									<a class="scrollTo link_infos" href="#infos_aides">Les aides</a><br />
-									</div>
-								</div>
-								<a class="scrollTo link_infos" href="#infos_contact">Nous contacter</a><br />
-								<a class="scrollTo link_infos" href="#infos_plan">Plan d'accès</a><br />
-							</div> <!-- fin sousmenu-infos -->
-						</div> <!-- fin menu-infos -->
-			</div> <!-- fin menu -->
-			<div class="content">
-			<section id="accueil">
-				<div id="panorama">
-					<img class="slider" align="center"src="images/lePuy.jpg" alt="Panorama">
-				</div>
-				<h1 align="center">Accueil</h1>
-				<div id="accueildiv">
-					<p align="center">
-						Le département Informatique - Imagerie Numérique de l'IUT du Puy-en-Velay vous propose deux diplômes universitaires, dont la qualité est reconnue par les professionnels du secteur :<br/><br/>
+						<h3><a href="#infos" class="scrollTo link_infos">Infos</a></h3>
+						<div class="sousmenu sousmenu-infos">
+							<a class="scrollTo link_infos" href="#infos_informations">Informations</a><br />
+							<a class="scrollTo link_infos" href="#infos_candidater">Candidater</a><br />
+						<div class="link_list">
+						<a class="scrollTo link_infos" href="#infos_etreetudiant" >Être étudiant au Puy</a><b class="caret"></b><br />
+							<div class="menu_souselts">
+								<a class="scrollTo link_infos" href="#infos_vivre">Vivre au Puy-en-Velay</a><br />
+								<a class="scrollTo link_infos" href="#infos_seloger">Se loger</a><br />
+								<a class="scrollTo link_infos" href="#infos_aides">Les aides</a><br />
+							</div>
+						</div>
+						<a class="scrollTo link_infos" href="#infos_contact">Nous contacter</a><br />
+						<a class="scrollTo link_infos" href="#infos_plan">Plan d'accès</a><br />
+						</div> <!-- fin sousmenu-infos -->
+					</div> <!-- fin menu-infos -->
+		</section><!-- fin seccion menu2 -->
+		<section id="dut" align="center">
+			Un DUT pleinement image !
 
-					<ul style="list-style-type:circle">
-						Un DUT informatique en Imagerie Numérique
-						Une Licence Professionnelle Imagerie Numérique en alternance
-					<br/>
+			Un Cursus en deux ans qui vous permettra :
 
-					Avec ces deux cursus, l'IUT Informatique et Imagerie numérique du Puy-en-Velay est l'un des seuls sites en France offrant une formation complète en 3 ans dans le domaine de l’image.</p>	
-				</div>
-			</section> <!-- fin section accueil -->
+			D’acquérir des bases solides en informatique.
+			De posséder une bonne culture générale dans le domaine de l'image numérique.
 
-			<section id="dut" align="center">
-				Un DUT pleinement image !
+			Environ 50% du temps d'enseignement consacré à l'image :
 
-				Un Cursus en deux ans qui vous permettra :
+			En première année, même si une grande partie du temps est consacrée à l'apprentissage des bases de l'informatique, l'orientation générale reste liée à l'image (choix des supports, domaines approfondis, etc. 
+			La deuxième année est consacrée entièrement à l'étude de l'informatique appliquée à l'image.
 
-				D’acquérir des bases solides en informatique.
-				De posséder une bonne culture générale dans le domaine de l'image numérique.
-
-				Environ 50% du temps d'enseignement consacré à l'image :
-
-				En première année, même si une grande partie du temps est consacrée à l'apprentissage des bases de l'informatique, l'orientation générale reste liée à l'image (choix des supports, domaines approfondis, etc. 
-				La deuxième année est consacrée entièrement à l'étude de l'informatique appliquée à l'image.
-
-				<div class=" bigHeight " id="dut_presentation">PRESENTATION<br /><br /><br /></div>
-				<div id="dut_cursus">
-					<div class=" bigHeight " id="dut_premiereannee">PREMIERE ANNEE<br /><br /><br /></div>
-					<div class=" bigHeight " id="dut_deuxiemeannee">DEUXIEME ANNEE<br /><br /><br /></div>
-				</div>
-				<div id="dut_etudier">
-					<div class=" bigHeight " id="dut_etreetudiant">ETRE ETUDIANT<br /><br /><br /></div>
-					<div class=" bigHeight " id="dut_paroles">PAROLES<br /><br /><br /></div>
-				</div>
-				<div id="dut_apres">
-					<div class=" bigHeight " id="dut_possibilites">POSSIBILITES<br /><br /><br /></div>
-					<div class=" bigHeight " id="dut_poursuite">POURSUITE<br /><br /><br /></div>
-					<div class=" bigHeight " id="dut_exemples">EXEMPLES<br /><br /><br /></div>
-				</div>
-				<div class=" bigHeight " id="dut_conditions">CONDITIONS<br /><br /><br /></div>
-				<div class=" bigHeight " id="dut_travaux">TRAVAUX<br /><br /><br /></div>
-				<div class=" bigHeight " id="dut_faq">FAQ<br /><br /><br /></div>
-
-			</section> <!-- fin section dut -->
-
-			<section id="licence" align="center">
+			<div class=" bigHeight " id="dut_presentation">PRESENTATION<br /><br /><br /></div>
+			<div id="dut_cursus">
+				<div class=" bigHeight " id="dut_premiereannee">PREMIERE ANNEE<br /><br /><br /></div>
+				<div class=" bigHeight " id="dut_deuxiemeannee">DEUXIEME ANNEE<br /><br /><br /></div>
+			</div>
+			<div id="dut_etudier">
+				<div class=" bigHeight " id="dut_etreetudiant">ETRE ETUDIANT<br /><br /><br /></div>
+				<div class=" bigHeight " id="dut_paroles">PAROLES<br /><br /><br /></div>
+			</div>
+			<div id="dut_apres">
+				<div class=" bigHeight " id="dut_possibilites">POSSIBILITES<br /><br /><br /></div>
+				<div class=" bigHeight " id="dut_poursuite">POURSUITE<br /><br /><br /></div>
+				<div class=" bigHeight " id="dut_exemples">EXEMPLES<br /><br /><br /></div>
+			</div>
+			<div class=" bigHeight " id="dut_conditions">CONDITIONS<br /><br /><br /></div>
+			<div class=" bigHeight " id="dut_travaux">TRAVAUX<br /><br /><br /></div>
+			<div class=" bigHeight " id="dut_faq">FAQ<br /><br /><br /></div>
+		</section> <!-- fin section dut -->
+		<section id="licence" align="center">
+			<p>
 				La licence professionelle: une formation par alternance
 
 				La licence informatique Systèmes Informatiques et Logiciels option image et son...
@@ -164,29 +214,27 @@
 				Objectifs
 
 				La licence informatique SIL est spécialisée dans l’imagerie numérique et couvre les domaines de la modélisation 3D, l'animation, l'infographie 2D et 3D, ainsi que le développement d'applications en 3D temps réel (jeux, réalité virtuelle, ...).
-					<div class="bigHeight" id="licence_licence">LICENCE</div>
-					<div class="bigHeight" id="licence_presentation">PRESETATION</div>
-					<div class="bigHeight" id="licence_objectifs">OBJECTIFS</div>
-					<div class="bigHeight" id="licence_alternance">
-						<div class="bigHeight" id="licence_formation">FORMATION</div>
-						<div class="bigHeight" id="licence_contrat">CONTRAT</div>
-						<div class="bigHeight" id="licence_statut">STATUT</div>
-						<div class="bigHeight" id="licence_recrutement">RECRUTEMENT</div>
-					</div>
-					<div class="bigHeight" id="licence_formation2">
-						<div class="bigHeight" id="licence_parcours">PARCOURS</div>
-						<div class="bigHeight" id="licence_architecture">ARCHITECTUYRE</div>
-						<div class="bigHeight" id="licence_technical">TECHNICAL</div>
-						<div class="bigHeight" id="licence_3drt">3DRT</div>
-					</div>
-					<div class="bigHeight" id="licence_conditions">CONDITIONS</div>
-					<div class="bigHeight" id="licence_faq">FAQ</div>
-
-
-			</section> <!-- fin section licence -->
-
-			<section id="infos" align="center">
-
+			</p>
+			<div class="bigHeight" id="licence_licence">LICENCE</div>
+			<div class="bigHeight" id="licence_presentation">PRESETATION</div>
+			<div class="bigHeight" id="licence_objectifs">OBJECTIFS</div>
+			<div class="bigHeight" id="licence_alternance">
+				<div class="bigHeight" id="licence_formation">FORMATION</div>
+				<div class="bigHeight" id="licence_contrat">CONTRAT</div>
+				<div class="bigHeight" id="licence_statut">STATUT</div>
+				<div class="bigHeight" id="licence_recrutement">RECRUTEMENT</div>
+			</div>
+			<div class="bigHeight" id="licence_formation2">
+				<div class="bigHeight" id="licence_parcours">PARCOURS</div>
+				<div class="bigHeight" id="licence_architecture">ARCHITECTUYRE</div>
+				<div class="bigHeight" id="licence_technical">TECHNICAL</div>
+				<div class="bigHeight" id="licence_3drt">3DRT</div>
+			</div>
+			<div class="bigHeight" id="licence_conditions">CONDITIONS</div>
+			<div class="bigHeight" id="licence_faq">FAQ</div>
+		</section> <!-- fin section licence -->
+		<section id="infos" align="center">
+			<p>
 				Vivre au Puy en Velay
 
 				Le Puy, une ville à découvrir :
@@ -209,21 +257,20 @@
 				Office du tourisme
 				Mairie du Puy
 				Zoom43   (Portail d'information de la Haute-Loire)
-
-				<div class="bigHeight" id="infos_informations">INFORMATIONS</div>
-				<div class="bigHeight" id="infos_candidater">CANDIDATER</div>
-				<div class="bigHeight" id="infos_etreetudiant">
-					<div class="bigHeight" id="infos_vivre">VIVRE</div>
-					<div class="bigHeight" id="infos_seloger">SELOGER</div>
-					<div class="bigHeight" id="infos_aider">AIDER</div>
-				</div>
-				<div class="bigHeight" id="infos_contact">CONTACT</div>
-				<div class="bigHeight" id="infos_plan">PLAN<br />
-				<div id="map"></div>
-				</div>
-
-			</section>
+			</p>
+			<div class="bigHeight" id="infos_informations">INFORMATIONS</div>
+			<div class="bigHeight" id="infos_candidater">CANDIDATER</div>
+			<div class="bigHeight" id="infos_etreetudiant">
+				<div class="bigHeight" id="infos_vivre">VIVRE</div>
+				<div class="bigHeight" id="infos_seloger">SELOGER</div>
+				<div class="bigHeight" id="infos_aider">AIDER</div>
 			</div>
+			<div class="bigHeight" id="infos_contact">CONTACT</div>
+			<div class="bigHeight" id="infos_plan">PLAN<br />
+				<div id="map"></div>
+			</div>
+		</section>
 	</div>
+</div> <!-- fin container -->
 </body>
 </html>
