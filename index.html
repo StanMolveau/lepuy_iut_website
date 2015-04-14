@@ -1,276 +1,754 @@
 <html lang="fr">
 <head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta property="og:image" content="images/iut_logo.jpg"/>
-		<meta property="og:title" content="IUT Le Puy en Velay - France"/>
-		<meta property="og:description" content="website IUT Le Puy en Velay - FR"/>
-		<meta property="og:url" content="http://info-lepuy.fr/"/>
-		<meta property="og:type" content="website">
-		<link rel="shortcut icon" href="images/favicon.ico">
-		<!-- ajout bootstrap et jquery -->
-		<script src="js/jquery.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/leaflet.js"></script>
-		<script src="js/functions.js"></script>
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/leaflet.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-		<!-- on placera a la fin du fichier normalement pour accélerer le chargement des pages -->
-		<title>IUT Le Puy en Velay</title>	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:image" content="images/iut_logo.jpg"/>
+	<meta property="og:title" content="IUT Le Puy en Velay - France"/>
+	<meta property="og:description" content="website IUT Le Puy en Velay - FR"/>
+	<meta property="og:url" content="http://info-lepuy.fr/"/>
+	<meta property="og:type" content="website">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<!-- ajout bootstrap et jquery -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/leaflet.js"></script>
+	<script src="js/functions.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/leaflet.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<!-- on placera a la fin du fichier normalement pour accélerer le chargement des pages -->
+	<title>IUT Le Puy en Velay</title>	
 </head>
 <body>
-<div class="site container-fluid">
-	<section id="accueil">
-		<div class="row text-center">
-				<h2>Accueil</h2>
-			<div id="accueildiv">
-				<p align="center">
-					Le département Informatique - Imagerie Numérique de l'IUT du Puy-en-Velay vous propose deux diplômes universitaires, dont la qualité est reconnue par les professionnels du secteur :<br/><br/>
+	<div class="site container-fluid">
+		<section id="accueil">
+			<div class="row text-center">
+				<div id="accueildiv">
+					<h1>Accueil</h1>
+					<p align="center">
+						Le département Informatique - Imagerie Numérique de l'IUT du Puy-en-Velay vous propose deux diplômes universitaires, dont la qualité est reconnue par les professionnels du secteur :<br/><br/>
 
-				<ul style="list-style-type:circle">
-					Un DUT informatique en Imagerie Numérique
-					Une Licence Professionnelle Imagerie Numérique en alternance
-				<br/>
+						<ul style="list-style-type:circle">
+							<li>Un DUT informatique en Imagerie Numérique<br/></li>
+							<li>Une Licence Professionnelle Imagerie Numérique en alternance</li>
+							<br/>
 
-				Avec ces deux cursus, l'IUT Informatique et Imagerie numérique du Puy-en-Velay est l'un des seuls sites en France offrant une formation complète en 3 ans dans le domaine de l’image.</p>	
-			</div><!-- fin section accueil -->
-		</div> <!-- fin row -->
-		<div class="row menu text-center" id="menu">
-		<section class="menu-carre col-xs-4 center-block">
-			<h2>DUT</h2>
-			<i class="fa fa-circle-thin fa-4x link_dut"></i>
-				<ul>
-					<li>
-						<a target="_blank" href="http://doc.qt.io/qt-5/gettingstarted.html">Installation</a>
-					</li>
-					<li>
-						<a target="_blank" href="http://doc.qt.io/qt-5/qtexamplesandtutorials.html">Examples &amp; tutorials</a>
-					</li>
-					<li>
-						<a target="_blank" href="http://doc.qt.io/qt-5/topics-app-development.html">Tools</a>
-					</li>                
-				</ul>
-				<p><a href="/download/" class="btn btn-narrow btn-dark">Download now</a></p>            
-		</section>
-		<section class="menu-carre col-xs-4 center-block">
-			<h2>Licence</h2>
-			<i class="fa fa-circle-thin fa-4x link_licence"></i>
-			<ul>
-				<li>
-					<a target="_blank" href="http://doc.qt.io/qt-5/gettingstarted.html">Installation</a>
-				</li>
-				<li>
-					<a target="_blank" href="http://doc.qt.io/qt-5/qtexamplesandtutorials.html">Examples &amp; tutorials</a>
-				</li>
-				<li>
-					<a target="_blank" href="http://doc.qt.io/qt-5/topics-app-development.html">Tools</a>
-				</li>                
-			</ul>
-			<p><a href="/download/" class="btn btn-narrow btn-dark">Download now</a></p>
-		</section>
-		<section class="menu-carre col-xs-4 center-block">
-				<h2>Informations générales</h2>
-				<i class="fa fa-circle-thin fa-4x link_infos"></i>
-				<ul>
-					<li>
-						<a target="_blank" href="http://doc.qt.io/qt-5/gettingstarted.html">Installation</a>
-					</li>
-					<li>
-						<a target="_blank" href="http://doc.qt.io/qt-5/qtexamplesandtutorials.html">Examples &amp; tutorials</a>
-					</li>
-					<li>
-						<a target="_blank" href="http://doc.qt.io/qt-5/topics-app-development.html">Tools</a>
-					</li>                
-				</ul>
-				<p><a href="/download/" class="btn btn-narrow btn-dark">Download now</a></p>
-		</section>
-		</div> <!-- fin menu -->
-	</section><!-- fin section accueil -->
-	<div class="content">
-		<section id="menu2">
-				<div class="logo">
-					<a href=""><img class="iut_logo" src="images/iut_logo.jpg" alt="logo iut imagerie numérique"></a>
-				</div>
-				<div class="menu-accueil">
-					<h3><a class="scrollTo link_accueil" href="">Accueil</a></h3>
-				</div>
-				<div class="menu-dut">
-					<h3><a class="scrollTo link_dut" href="#dut">DUT</a></h3>
-					<div class="sousmenu sousmenu-dut">
-						<a class="scrollTo link_dut" href="#dut_presentation">Présentation</a><br />
-						<div class="link_list"><a class="scrollTo link_dut" href="#dut_cursus">Cursus</a><b class="caret"></b><br />
-							<div class="menu_souselts">
-								<a class="scrollTo link_dut" href="#dut_premiereannee">Première année</a><br />
-								<a class="scrollTo link_dut" href="#dut_deuxiemeannee">Deuxième année</a><br />	
-							</div>
+							Avec ces deux cursus, l'IUT Informatique et Imagerie numérique du Puy-en-Velay est l'un des seuls sites en France offrant une formation complète en 3 ans dans le domaine de l’image.</p>	<br/><br/>
+						</div><!-- fin section accueil -->
+						<br/><br/><br/><br/><br/><br/>
+					</div> <!-- fin row -->
+					<div class="row menu text-center" id="menu">
+						<section class="menu-carre col-xs-4 center-block">
+							<h2>DUT</h2>
+							<i class="fa fa-circle-thin fa-4x link_dut"></i>
+							<ul>
+								<li>
+									<a target="_blank" href="http://doc.qt.io/qt-5/gettingstarted.html">Installation</a>
+								</li>
+								<li>
+									<a target="_blank" href="http://doc.qt.io/qt-5/qtexamplesandtutorials.html">Examples &amp; tutorials</a>
+								</li>
+								<li>
+									<a target="_blank" href="http://doc.qt.io/qt-5/topics-app-development.html">Tools</a>
+								</li>                
+							</ul>
+							<p><a href="/download/" class="btn btn-narrow btn-dark">Download now</a></p>            
+						</section>
+						<section class="menu-carre col-xs-4 center-block">
+							<h2>Licence</h2>
+							<i class="fa fa-circle-thin fa-4x link_licence"></i>
+							<ul>
+								<li>
+									<a target="_blank" href="http://doc.qt.io/qt-5/gettingstarted.html">Installation</a>
+								</li>
+								<li>
+									<a target="_blank" href="http://doc.qt.io/qt-5/qtexamplesandtutorials.html">Examples &amp; tutorials</a>
+								</li>
+								<li>
+									<a target="_blank" href="http://doc.qt.io/qt-5/topics-app-development.html">Tools</a>
+								</li>                
+							</ul>
+							<p><a href="/download/" class="btn btn-narrow btn-dark">Download now</a></p>
+						</section>
+						<section class="menu-carre col-xs-4 center-block">
+							<h2>Informations générales</h2>
+							<i class="fa fa-circle-thin fa-4x link_infos"></i>
+							<ul>
+								<li>
+									<a target="_blank" href="http://doc.qt.io/qt-5/gettingstarted.html">Installation</a>
+								</li>
+								<li>
+									<a target="_blank" href="http://doc.qt.io/qt-5/qtexamplesandtutorials.html">Examples &amp; tutorials</a>
+								</li>
+								<li>
+									<a target="_blank" href="http://doc.qt.io/qt-5/topics-app-development.html">Tools</a>
+								</li>                
+							</ul>
+							<p><a href="/download/" class="btn btn-narrow btn-dark">Download now</a></p>
+						</section>
+					</div> <!-- fin menu -->
+				</section><!-- fin section accueil -->
+				<div class="content">
+					<section id="menu2">
+						<div class="logo">
+							<a href=""><img class="iut_logo" src="images/iut_logo.jpg" alt="logo iut imagerie numérique"></a>
 						</div>
-						<div class="link_list"><a class="scrollTo link_dut" href="#dut_etudier" >Etudier à l'IUT</a><b class="caret"></b><br />
-							<div class="menu_souselts">
-								<a class="scrollTo link_dut" href="#dut_etreetudiant">Etre étudiant à l'IUT</a><br />	
-								<a class="scrollTo link_dut" href="#dut_paroles">Paroles d'étudiants</a><br />
-							</div>
+						<div class="menu-accueil">
+							<h3><a class="scrollTo link_accueil" href="">Accueil</a></h3>
 						</div>
-						<div class="link_list"><a class="scrollTo link_dut" href="#dut_apres" >Apres le DUT</a><b class="caret"></b><br />
-							<div class="menu_souselts">
-								<a class="scrollTo link_dut" href="#dut_possibilites">Les possibilités</a><br />
-								<a class="scrollTo link_dut" href="#dut_poursuite">La poursuite d'études</a><br />
-								<a class="scrollTo link_dut" href="#dut_parcours">Exemples de parcours</a><br />
-							</div>
-						</div>
-						<a class="scrollTo link_dut" href="#dut_conditions">Conditions d'admission</a><br />
-						<a class="scrollTo link_dut" href="#dut_travaux">Travaux d'étudiants</a><br />
-						<a class="scrollTo link_dut" href="#dut_faq">FAQ</a><br />
-					</div> <!-- fin sousmenu-dut -->
-				</div> <!-- fin menu dut -->
-				<div class="menu-licence">
-					<h3><a href="#licence" class="scrollTo link_licence">Licence</a></h3>
-					<div class="sousmenu sousmenu-licence">
-						<a class="scrollTo link_licence" href="#licence_licence">Licence</a><br />
-						<a class="scrollTo link_licence" href="#licence_presentation">Présentation</a><br />
-						<a class="scrollTo link_licence" href="#licence_objectifs">Objectifs</a><br />
-						<div class="link_list"><a class="scrollTo link_licence" href="#licence_alternance" >Alternance</a><b class="caret"></b><br />
-							<div class="menu_souselts">
-								<a class="scrollTo link_licence" href="#licence_formation">La formation par alternance</a><br />	
-								<a class="scrollTo link_licence" href="#licence_contrat">Contrat d'Apprentissage</a><br />	
-								<a class="scrollTo link_licence" href="#licence_statut">Statut et Rémunération</a><br />	
-								<a class="scrollTo link_licence" href="#licence_recrutement">Recrutement en entreprise</a><br />
-							</div>
-							</div>
-							<div class="link_list">
-							<a class="scrollTo link_licence" href="#licence_formation2">La Formation</a><b class="caret"></b><br />
-								<div class="menu_souselts">
-									<a class="scrollTo link_licence" href="#licence_parcours">Trois parcours possibles</a><br />
-									<a class="scrollTo link_licence" href="#licence_architecture">Architecture 3D</a><br />	
-									<a class="scrollTo link_licence" href="#licence_technical">Technical Artist</a>	<br />
-									<a class="scrollTo link_licence" href="#licence_3drt">3D Temps Réel</a><br />
+						<div class="menu-dut">
+							<h3><a class="scrollTo link_dut" href="#dut">DUT</a></h3>
+							<div class="sousmenu sousmenu-dut">
+								<a class="scrollTo link_dut" href="#dut_presentation">Présentation</a><br />
+
+								<div class="link_list"><a class="scrollTo link_dut" href="#dut_cursus">Cursus</a><b class="caret"></b><br />
+									<div class="menu_souselts">
+										<a class="scrollTo link_dut" href="#dut_premiereannee">Première année</a><br />
+										<a class="scrollTo link_dut" href="#dut_deuxiemeannee">Deuxième année</a><br />	
+									</div>
 								</div>
+								<div class="link_list"><a class="scrollTo link_dut" href="#dut_etudier" >Etudier à l'IUT</a><b class="caret"></b><br />
+									<div class="menu_souselts">
+										<a class="scrollTo link_dut" href="#dut_etreetudiant">Etre étudiant à l'IUT</a><br />	
+										<a class="scrollTo link_dut" href="#dut_paroles">Paroles d'étudiants</a><br />
+									</div>
+								</div>
+								<div class="link_list"><a class="scrollTo link_dut" href="#dut_apres" >Apres le DUT</a><b class="caret"></b><br />
+									<div class="menu_souselts">
+										<a class="scrollTo link_dut" href="#dut_possibilites">Les possibilités</a><br />
+										<a class="scrollTo link_dut" href="#dut_poursuite">La poursuite d'études</a><br />
+										<a class="scrollTo link_dut" href="#dut_parcours">Exemples de parcours</a><br />
+									</div>
+								</div>
+								<a class="scrollTo link_dut" href="#dut_conditions">Conditions d'admission</a><br />
+								<a class="scrollTo link_dut" href="#dut_travaux">Travaux d'étudiants</a><br />
+								<a class="scrollTo link_dut" href="#dut_faq">FAQ</a><br />
+							</div> <!-- fin sousmenu-dut -->
+						</div> <!-- fin menu dut -->
+						<div class="menu-licence">
+							<h3><a href="#licence" class="scrollTo link_licence">Licence</a></h3>
+							<div class="sousmenu sousmenu-licence">
+								<a class="scrollTo link_licence" href="#licence_licence">Licence</a><br />
+								<a class="scrollTo link_licence" href="#licence_presentation">Présentation</a><br />
+								<a class="scrollTo link_licence" href="#licence_objectifs">Objectifs</a><br />
+								<div class="link_list"><a class="scrollTo link_licence" href="#licence_alternance" >Alternance</a><b class="caret"></b><br />
+									<div class="menu_souselts">
+										<a class="scrollTo link_licence" href="#licence_formation">La formation par alternance</a><br />	
+										<a class="scrollTo link_licence" href="#licence_contrat">Contrat d'Apprentissage</a><br />	
+										<a class="scrollTo link_licence" href="#licence_statut">Statut et Rémunération</a><br />	
+										<a class="scrollTo link_licence" href="#licence_recrutement">Recrutement en entreprise</a><br />
+									</div>
+								</div>
+								<div class="link_list">
+									<a class="scrollTo link_licence" href="#licence_formation2">La Formation</a><b class="caret"></b><br />
+									<div class="menu_souselts">
+										<a class="scrollTo link_licence" href="#licence_parcours">Trois parcours possibles</a><br />
+										<a class="scrollTo link_licence" href="#licence_architecture">Architecture 3D</a><br />	
+										<a class="scrollTo link_licence" href="#licence_technical">Technical Artist</a>	<br />
+										<a class="scrollTo link_licence" href="#licence_3drt">3D Temps Réel</a><br />
+									</div>
+								</div>
+								<a class="scrollTo link_licence" href="#licence_conditions">Conditions d'admission</a><br />
+								<a class="scrollTo link_licence" href="#licence_faq">FAQ</a><br />
+							</div><!-- fin sousmenu-licence -->
+						</div> <!-- fin menu-licence -->
+						<div class="menu-infos" >
+							<h3><a href="#infos" class="scrollTo link_infos">Infos</a></h3>
+							<div class="sousmenu sousmenu-infos">
+								<a class="scrollTo link_infos" href="#infos_informations">Informations</a><br />
+								<a class="scrollTo link_infos" href="#infos_candidater">Candidater</a><br />
+								<div class="link_list">
+									<a class="scrollTo link_infos" href="#infos_etreetudiant" >Être étudiant au Puy</a><b class="caret"></b><br />
+									<div class="menu_souselts">
+										<a class="scrollTo link_infos" href="#infos_vivre">Vivre au Puy-en-Velay</a><br />
+										<a class="scrollTo link_infos" href="#infos_seloger">Se loger</a><br />
+										<a class="scrollTo link_infos" href="#infos_aides">Les aides</a><br />
+									</div>
+								</div>
+								<a class="scrollTo link_infos" href="#infos_contact">Nous contacter</a><br />
+								<a class="scrollTo link_infos" href="#infos_plan">Plan d'accès</a><br />
+							</div> <!-- fin sousmenu-infos -->
+						</div> <!-- fin menu-infos -->
+					</section><!-- fin seccion menu2 -->
+					<section id="dut" align="center">
+						<br/>	<br/>	<br/>
+						<h1 align="center">DUT</h1>
+						<div class=" bigHeight " id="dut_presentation"><h2 align="center">PRESENTATION</h2><br /><br /><br /></div>
+						<hr class="hr_line" /><br />
+						<p align="center">
+							Un dut pleinement image !<br />
+
+							Un Cursus en deux ans qui vous permettra :<br />
+
+							D’acquérir des bases solides en informatique.<br />
+							De posséder une bonne culture générale dans le domaine de l'image numérique.<br />
+
+							Environ 50% du temps d'enseignement consacré à l'image :<br />
+							
+							En première année, même si une grande partie du temps est consacrée à l'apprentissage des bases de l'informatique, l'orientation générale reste liée à l'image (choix des supports, domaines approfondis, etc.) <br /><br />
+							La deuxième année est consacrée entièrement à l'étude de l'informatique appliquée à l'image.<br /><br/>
+						</p>
+						<div id="dut_cursus">
+							<h1 align="center">CURSUS</h1>
+							<hr class="hr_line" /><br />
+							<div class=" bigHeight " id="dut_premiereannee"><h2 align="center">Premiere annee</h2><br /><br /></div>
+							<p align="center">
+								1000 heures d'enseignement...<br />
+								...durant lesquelles vous apprendrez les bases de l'informatique...<br />
+								Programmation d'algorithmiques et d'interfaces graphiques : C/C++, Qt, PHP, HTML/CSS, Python.<br />
+								Bases de données : MySQL.<br />
+								Systèmes d'exploitation : Windows et Linux.<br />
+								Réseaux.<br />
+
+								... Et profiterez d'une formation complémentaire  :<br />
+
+								Aux techniques mathématiques utilisées pour l’imagerie numérique.<br />
+								A la communication en langue française et anglaise.<br />
+								A la gestion des entreprises, gestion des projets informatiques.<br />
+
+								1/3 de ce temps consacré aux travaux pratiques :<br />
+
+								Seul devant un PC, vous mettez en pratique vos connaissances...
+							</p>
+							<div class=" bigHeight " id="dut_deuxiemeannee">
+								<h2 align="center">Deuxieme annee</h2><br /><br />
 							</div>
-							<a class="scrollTo link_licence" href="#licence_conditions">Conditions d'admission</a><br />
-							<a class="scrollTo link_licence" href="#licence_faq">FAQ</a><br />
-						</div><!-- fin sousmenu-licence -->
-					</div> <!-- fin menu-licence -->
-					<div class="menu-infos" >
-						<h3><a href="#infos" class="scrollTo link_infos">Infos</a></h3>
-						<div class="sousmenu sousmenu-infos">
-							<a class="scrollTo link_infos" href="#infos_informations">Informations</a><br />
-							<a class="scrollTo link_infos" href="#infos_candidater">Candidater</a><br />
-						<div class="link_list">
-						<a class="scrollTo link_infos" href="#infos_etreetudiant" >Être étudiant au Puy</a><b class="caret"></b><br />
-							<div class="menu_souselts">
-								<a class="scrollTo link_infos" href="#infos_vivre">Vivre au Puy-en-Velay</a><br />
-								<a class="scrollTo link_infos" href="#infos_seloger">Se loger</a><br />
-								<a class="scrollTo link_infos" href="#infos_aides">Les aides</a><br />
+							<p align="center">
+								800 heures d'enseignements...
+								... durant lesquelles vous aborderez les domaines suivants :<br />
+								Programmation concurrente/
+								Algorithmique pour la synthèse d’images/
+								Programmation d'applications mobiles/
+								Utilisation de bibliothèques graphiques<br />
+								<b>OpenGL / 
+									OpenSceneGraph / 
+									Unity3D /
+								</b>
+								Développement d'applications créatives de réalité augmentée<br />
+								...et pourrez au choix suivre l'un des deux parcours suivant (250 h)<br />
+							</p>
+							<h3 align="center" >Parcours programmation:</h3>
+							<br /><br />
+							<p align="center">
+								Réalisation de projets utilisant l’algorithmique pour la synthèse et/ou traitement d’images<br />
+								Programmation avancée de logiciels 3D par l’utilisation de bibliothèques professionnelles<br />
+								Programmation optimisée par les technologies GPGPU<br />
+								Formation en réalité augmentée et virtuelle<br />
+								Formation en mathématiques ouvrant sur des poursuites d'études longues<br />
+							</p>
+
+							<h3 align="center" >Parcours synthèse d’images:</h3><br /><br />
+							<p align="center">
+								Formation avancée dans les logiciels de synthèse d’images<br />
+								Réalisation de projets de synthèse et/ou retouche d’images<br />
+								Réalisation d’animations interactives en 3D par l’utilisation de bibliothèques professionnelles<br />
+								Formation en technologies web responsive.<br />
+							</p>
+							<h3 align="center" >Un Projet tuteuré :</h3><br />
+							<p align="center">
+								Encadré par un enseignant, vous travaillerez en groupe, sur un projet que vous choisirez.<br />
+								Le sujet est proposé par des partenaires de l'IUT (Laboratoire de recherche, entreprises, collectivités locales, etc...)<br />
+								Il vous permettra de mettre à profit les connaissances acquises durant la formation.<br />
+								<br />
+								Stage de fin d'études : Durant 10 semaines, vous réaliserez un projet en milieu professionnel.<br />
+
+								Se déroulant d'avril à juin, ce stage fait intégralement partie de la scolarité.<br />
+
+								Vous pourrez choisir de le réaliser à l'étranger : environ 25 % des étudiants font ce choix (Grande Bretagne, USA, Allemagne , Autriche,Japon, Chine ...)<br />
+							</p>
+						</div> <!-- FIN DUT_CURSUS-->
+						<div id="dut_etudier">
+							<div class=" bigHeight " id="dut_etreetudiant"><h2 align="center">ETRE ETUDIANT</h2><br /><br /><br /></div>
+							<hr class="hr_line" /><br/>
+							<h4 align="center">Etre étudiant à l'IUT </h4><br/><br/>
+							<p align="center">
+								<b>Les Étudiants</b><br/>
+								<ul align="left">
+									<li>	Une promotion comporte entre 40 et 60 étudiants.</li>
+									<li>	Le département Informatique - Imagerie Numérique partage ses locaux, avec le département de chimie, le département MMI (Métiers du Multimédia et d'Internet) et l'IUFM. Cela représente près de 400 étudiants provenant de toute la France.</li>
+								</ul>
+							</p>
+							<p align="center">
+								<b>Les Enseignants</b><br/>
+								<ul align="left">
+									<li>	Environ 20 % des enseignements sont réalisés par des enseignants chercheurs (maitres de conférences et professeurs des universités, doctorants en fin de thèse, etc.) Il existe de ce fait, un authentique pôle de recherche sur le site du Puy.</li>
+									<li>	Environ 20 % des enseignements sont réalisés par des enseignants issus du secondaire (agrégés et certifiés). Bien au fait des problématiques des lycéens, ces enseignants permettent de faciliter la transition du lycée vers l'enseignement supérieur.</li>
+									<li>	Environ 60 % des enseignements sont réalisés par des intervenants extérieurs issus du monde de l'entreprise. Par leur regard tourné vers le monde du travail, ces enseignants permettent de donner à la formation son caractère professionnalisant.</li>
+								</ul>
+							</p>
+
+
+							<div class=" bigHeight " id="dut_paroles"><h4 align="center">Paroles d'étudiants</h4><br /><br /><br />
 							</div>
+							<p align="center">
+								<b>Ils l'ont écrit : </b><br/>
+								<ul align="left">
+									<li><b>Thomas F.</b> (Promo 2007) : Cette année, je suis en licence professionnelle au Puy en Velay et je suis en alternance dans une entreprise lyonnaise spécialisée dans la conception d'implants pour la chirurgie sur la Colonne vertébrale. Je suis chargé de réaliser des animations en 3D pour présenter leurs produits...</li><br />
+									<li><b>Jérôme E.</b> (Promo 2006) :Cette année je suis en Génie Informatique à l'UTBM à Belfort et je m'y plaît plutôt bien.</li><br />
+									<li><b>Julien C.</b> (Promo 2006) : Je suis actuellement en licence en alternance au Puy en Velay dans la section 3D Temps Réel...</li><br />
+									<li><b>Marlène C.</b> (Promo 2006) : Je suis partie à Teesside (Angleterre). Je suis en Visualisation, un cursus de programmation graphique...</li><br />
+									<li><b>Pierre M. </b>(Promo 2005) :  Je suis  à l’ISTASE à St Etienne où  je suis passé avec succès en seconde années : </li><br />
+									<li><b>Gilles B.</b> (Promo 2005) : J'ai choisi de continuer mes études après le DUT et me retrouve donc a Nîmes pour une formation de 2 ans dans une toute nouvelle école privée […] spécialisée dans le domaine du jeu vidéo exclusivement.</li><br />
+									<li><b>Jonathan S.</b> (Promo 2005) : Je poursuis actuellement mon cursus dans une licence professionnelle en informatique - commerce électronique, dans le but de travailler dans une agence Web, ou en tant qu'assistant chef de projet au sein d'une unité.[…]</li><br />
+									<li><b>Luc G </b>(Promo 2005) : Je suis actuellement en 1ère Année dans une école d'ingénierie en informatique et robotique (IMERIR à Perpignan) et en 3ème année de licence informatique à l'université de Perpignan. [...]</li><br />
+									<li><b>Cindy G.</b> (Promo 2004) : Après ma deuxième année au puy à l'iut je suis partie à Nice pour faire une licence imagerie numérique. </li><br />
+									<li><b>Florent E.</b> (Promo 2004) : J'ai été admis à Supinfocom à Valenciennes. Je fais de l'infographie (sur Maya) et de l'animation traditionnelle 2d. Nous avons aussi des cours plus orientés cinéma (son, scénario, analyse filmique).</li><br />
+								</ul>
+							</p>
 						</div>
-						<a class="scrollTo link_infos" href="#infos_contact">Nous contacter</a><br />
-						<a class="scrollTo link_infos" href="#infos_plan">Plan d'accès</a><br />
-						</div> <!-- fin sousmenu-infos -->
-					</div> <!-- fin menu-infos -->
-		</section><!-- fin seccion menu2 -->
-		<section id="dut" align="center">
-			Un DUT pleinement image !
+						<div id="dut_apres">
+								<h1 align="center">Apres le DUT...</h1>
+								<hr class="hr_line" />
+								<div class=" bigHeight " id="dut_possibilites"><h4 align="center">LES POSSIBILITES</h4><br /><br /><br />
+								</div>
+								<p align="left">
+									<b>Vous avez la possibilité ...</b>
+									<ul align="left">
+										<li>	d'entrer directement dans la vie active.</li>
+										<li>	de poursuivre vos études.</li>
+									</ul><br/>
+									<ul align="left">
+										Pour obtenir un diplôme reconnu au niveau européen :<br/>
+										<li>	il est nécessaire de suivre encore une année d'études</li>
+										<li>	80% des étudiants s'engagent dans une poursuite d'études (1 à 3 années supplémentaires, voire plus...)</li>
+									</ul>
+									<br/>
+								</p>
 
-			Un Cursus en deux ans qui vous permettra :
+								<div class=" bigHeight " id="dut_poursuite"><h3 align="center">Les Poursuites</h3><br /><br /><br />
+								</div>
+								<p align="left">
+									<b>Après le DUT, l'étudiant peut envisager des poursuites d'études :</b>
+									<ul align="left">
+										<li> Licence Classique.</li>
+										<li> Licence professionnelle.</li>
+										<li>Ecoles d'ingénieurs.</li>
+										<li> Conservatoire National des Arts et Métiers (C.N.A.M.)</li>
+									</ul>
+								</p>
 
-			D’acquérir des bases solides en informatique.
-			De posséder une bonne culture générale dans le domaine de l'image numérique.
+								
 
-			Environ 50% du temps d'enseignement consacré à l'image :
-
-			En première année, même si une grande partie du temps est consacrée à l'apprentissage des bases de l'informatique, l'orientation générale reste liée à l'image (choix des supports, domaines approfondis, etc. 
-			La deuxième année est consacrée entièrement à l'étude de l'informatique appliquée à l'image.
-
-			<div class=" bigHeight " id="dut_presentation">PRESENTATION<br /><br /><br /></div>
-			<div id="dut_cursus">
-				<div class=" bigHeight " id="dut_premiereannee">PREMIERE ANNEE<br /><br /><br /></div>
-				<div class=" bigHeight " id="dut_deuxiemeannee">DEUXIEME ANNEE<br /><br /><br /></div>
-			</div>
-			<div id="dut_etudier">
-				<div class=" bigHeight " id="dut_etreetudiant">ETRE ETUDIANT<br /><br /><br /></div>
-				<div class=" bigHeight " id="dut_paroles">PAROLES<br /><br /><br /></div>
-			</div>
-			<div id="dut_apres">
-				<div class=" bigHeight " id="dut_possibilites">POSSIBILITES<br /><br /><br /></div>
-				<div class=" bigHeight " id="dut_poursuite">POURSUITE<br /><br /><br /></div>
-				<div class=" bigHeight " id="dut_exemples">EXEMPLES<br /><br /><br /></div>
-			</div>
-			<div class=" bigHeight " id="dut_conditions">CONDITIONS<br /><br /><br /></div>
-			<div class=" bigHeight " id="dut_travaux">TRAVAUX<br /><br /><br /></div>
-			<div class=" bigHeight " id="dut_faq">FAQ<br /><br /><br /></div>
-		</section> <!-- fin section dut -->
-		<section id="licence" align="center">
-			<p>
-				La licence professionelle: une formation par alternance
-
-				La licence informatique Systèmes Informatiques et Logiciels option image et son...
-
-				Vous permet de compléter le DUT (ou autre formation Bac+2 équivalente) pour obtenir un diplôme, niveau Bac+3, reconnu au niveau Européen.
-				C'est une formation par alternance dont l'objectif est l'apprentissage d'un métier.
-				Parallèlement à la formation vous acquerrez en plus une expérience professionnelle, qui facilitera par la suite votre insertion dans le monde du travail.
-
-				Objectifs
-
-				La licence informatique SIL est spécialisée dans l’imagerie numérique et couvre les domaines de la modélisation 3D, l'animation, l'infographie 2D et 3D, ainsi que le développement d'applications en 3D temps réel (jeux, réalité virtuelle, ...).
-			</p>
-			<div class="bigHeight" id="licence_licence">LICENCE</div>
-			<div class="bigHeight" id="licence_presentation">PRESETATION</div>
-			<div class="bigHeight" id="licence_objectifs">OBJECTIFS</div>
-			<div class="bigHeight" id="licence_alternance">
-				<div class="bigHeight" id="licence_formation">FORMATION</div>
-				<div class="bigHeight" id="licence_contrat">CONTRAT</div>
-				<div class="bigHeight" id="licence_statut">STATUT</div>
-				<div class="bigHeight" id="licence_recrutement">RECRUTEMENT</div>
-			</div>
-			<div class="bigHeight" id="licence_formation2">
-				<div class="bigHeight" id="licence_parcours">PARCOURS</div>
-				<div class="bigHeight" id="licence_architecture">ARCHITECTUYRE</div>
-				<div class="bigHeight" id="licence_technical">TECHNICAL</div>
-				<div class="bigHeight" id="licence_3drt">3DRT</div>
-			</div>
-			<div class="bigHeight" id="licence_conditions">CONDITIONS</div>
-			<div class="bigHeight" id="licence_faq">FAQ</div>
-		</section> <!-- fin section licence -->
-		<section id="infos" align="center">
-			<p>
-				Vivre au Puy en Velay
-
-				Le Puy, une ville à découvrir :
+								
+								<div class=" bigHeight " id="dut_conditions"><h3 align="center">CONDITIONS</h3><br /><br /><br />
+								</div>
+								<h4 align="center">Profil à l'entrée de l'IUT </h4>
+								<p align="left"><br/><br/>
 
 
+									<b>Pour réussir </b>une scolarité à l'IUT imagerie numérique, il est important ...<br/>
+									<ul align="left">
+										<li>	d'avoir une bonne culture générale et scientifique.</li>
+										<li>	de ne pas être totalement allergique aux mathématiques. (Dans le domaine de l'image, il est un peu difficile de s'en passer complétement)</li>
+									</ul>
+									Mais aussi et surtout :<br/>
+									<ul align="left">
+										<li>	d'être motivé par l'informatique (il faut savoir que faire de l'informatique c'est utiliser des logiciels, mais aussi et principalement programmer des applications) </li>
+										<li>	d'être persévérant (il faut souvent des heures de travail pour obtenir un résultat satisfaisant, c'est un peu comme la musique)</li>
+										<li>	d'être curieux (pour progresser, il faut toujours chercher à comprendre)</li>
+										<li>	Avoir de l'imagination.</li>
 
-				Le Puy en velay est une ville de 20000 habitants au centre d'une agglomération qui en compte 50000.
+									</ul>
+								</p><br/><br/>
+									<table id="table_PremiereAnnee">
+										<tr>
+											<td align="center">
+												<h3 align="center">Admission sur Dossier</h3>
+											</td><br/>
+										</tr>
+										<tr>
+											<td>
+												Premiere Annee :
+											</td>
+											<td>
+												<br/><br/><li>	Baccalauréat, série S.</li><br/>
+												<li>	Autres séries : STI2D et ES (option Maths)</li><br/>
+											</td>
+										</tr><br/>
+										<tr>
+											<td> Deuxieme Annee : </td>
+											<td> 
+												<li>	Les étudiants ayant déjà eu une première formation en informatique : DUT 1A, DUT 2A, DEUG MIAS.</li>
+											</td>
+										</tr>
+									</table>
+									<div class=" bigHeight " id="dut_exemples"><h3 align="center">Exemples de parcours</h3><br /><br /><br />
+									</div>
+										<p align="left">
+											<b>Promotion [ 2008 ]</b>
+											<i>Bouvier Anthony</i> <a href="http://bouvier.anthony.free.fr/" target="_blank">PortFolio</a>
+											<ul align="left">
+												<li>2008 : Création du site internet de l'ambassade du Ghana.</li>
 
-				C'est une ville à taille humaine, riche d'un point de vue architectural et historique, qui possède de surcroît un tissu associatif dense. Située aux coeur des montagnes du Velay, au sud du massif central, c'est un lieu idéal pour tous les amoureux des loisirs en plein air (randonnée pédestre, VTT, cyclisme, canoë- kayak, parapente, ski, etc...).
+												<li>2008 : Stage de fin d'études chez EdenGames.</li>
+
+												<li>2009 : Refonte du site internet de L'iut du Puy en Velay</li>
+
+												<li>2009 : Stage de fin de Licence chez Enyware à Lyon.</li>
+											</ul>
+										</p>
+											
+									
+										<div class=" bigHeight " id="dut_travaux"><h3 align="center">Travaux d'Etudiants</h3><br /><br /><br /></div>
 
 
+											<b>Voici quelques travaux d'étudiants réalisés lors de divers projets 2012-2013 : </b><br/>
+											<i>Modélisation de l'extérieur de l'abbatiale du Monastier-sur-Gazeille</i><br/>
+											<iframe src="http://www.youtube.com/embed/vT1wvrqA3RE" width="640" height="385"></iframe><br/><br/><br/>
+											<i>Modélisation de l'intérieur de l'abbatiale du Monastier-sur-Gazeille</i><br/>
+											<iframe src="http://www.youtube.com/embed/954Vxhj30NY" width="640" height="385"></iframe><br/>
 
-				Du fait de sa taille modeste, le coût de la vie y est plus faible que dans une grande métropole, notamment le logement étudiant.
+											<i>Application mobile de réalité augmentée pour la mise en valeur du patrimoine du Monastier-sur-Gazeille</i><br/>
+											<a href="https://play.google.com/store/apps/details?id=com.Iut.PuyEnVelay.ARMonastier"target="_blank">Lien vers Google Play Store</a><br/>
+
+                                            <i>Modélisation archéologique et visite virtuelle du site de Saint Quentin</i>i><br/>
+												<a href="http://iutweb-lepuy.u-clermont1.fr/stquentin/SaintQuentinWeb.html" target="_blank">Lien vers la visite virtuelle</a><br/>
+
+										
+										<div class=" bigHeight " id="dut_faq">FAQ<br /><br /><br />
+										</div>
+							</div><!--FIN DUT_APRES-->
+						</section> <!-- fin section dut -->
+    <!-- DEBUT LICENCE--><section id="licence" align="center">
+				            <div class="bigHeight" id="licence_licence"><h1 align="center">LICENCE</h1>
+				            </div>
+				            <div class="bigHeight" id="licence_presentation"><h2 align="center">PRESENTATION</h2>
+				            </div>
+				            <hr class="hr_line" /><br />
+				            <p align="center">
+                                <b>La licence professionelle: une formation par alternance</b><br/>
+
+								La licence informatique Systèmes Informatiques et Logiciels option image : <br/><br/>
+
+								Vous permet de compléter le DUT (ou autre formation Bac+2 équivalente) pour obtenir un diplôme, niveau Bac+3, reconnu au niveau Européen.<br/>
+								C'est une formation par alternance dont l'objectif est l'apprentissage d'un métier.<br/>
+								Parallèlement à la formation vous acquerrez en plus une expérience professionnelle, qui facilitera par la suite votre insertion dans le monde du travail.<br/>
+
+								<h3 align="center">Objectifs</h3>
+
+								La licence informatique SIL est spécialisée dans l’imagerie numérique et couvre les domaines de : 
+								<ul align="left">
+								    <li> la modélisation 3D, </li>
+								    <li>l'animation, </li>
+								    <li>l'infographie 2D et 3D,</li>
+								    <li> ainsi que le développement d'applications en 3D temps réel (jeux, réalité virtuelle, ...).</li>
+								</ul>
+								</p>
+				            <div class="bigHeight" id="licence_alternance">
+                                <div class="bigHeight" id="licence_formation"><h3 align="center">Les formations</h3></div>
+                                    <b>La licence informatique et imagerie numérique ...</b>
+                                    <ul align="left">
+                                        <li>	Vous permet de compléter le DUT (ou autre formation Bac+2 équivalente) pour obtenir un diplôme, niveau Bac +3, reconnu au niveau Européen.                                             </li>
+                                        <li>	C'est une formation par alternance dont l'objectif est l'apprentissage d'un métier.</li>
+                                        <li>	Parallèlement à la formation vous acquerrez en plus une expérience professionnelle, qui facilitera par la suite votre insertion dans le monde                                          du travail.</li><br/>
+                                    </ul>
+
+                                    <i>2/3 du temps en entreprise, 1/3 du temps à l'IUT :</i><br/>
+                                     <ul align="left">
+                                         <li>Vous partagez votre temps entre l'entreprise (n'importe où en France) et le lieu de formation (l'IUT au Puy en Velay).</li><br/>
+                                         <li>Vous avez un statut d'apprenti.</li><br/>
+                                         <li>Vous êtes associé à l'entreprise par un contrat d'apprentissage : c'est un contrat de travail. Dans ce cadre, vous êtes un salarié de                                                      l'entreprise le temps de la durée de formation (ici 1 an).</li><br/>
+                                         <li>Vous gardez votre statut d'étudiant (et tous ses avantages).</li><br/>
+                                    </ul>
+                                     Vous alternez <U>semaines de formation</U> et <U>semaines en entreprise</U> selon le rythme suivant:
+                                    <ul align="left">
+                                        <li>	Septembre à décembre 2010 :<br/>
+                                        4 semaines en entreprise puis 4 semaines à l'IUT</li>
+                                        <li>	Janvier à août 2011 :<br/>
+                                            8 semaines en entreprise puis 4 semaines à l'IUT</li><br/>
+                                    </ul>
+
+                                <div class="bigHeight" id="licence_contrat"><h3 algin="center">Le Contrat</h3></div>
+                                    <p align="left">
+                                    Il est signé entre un étudiant ("l'apprenti") et une entreprise.<br/>
+                                    L'entreprise s'engage à assurer l'apprentissage du jeune, notamment via la formation Licence Professionnelle qu'il suivra à l'IUT.<br/>
+                                    La formation suivie et le diplôme préparé sont précisés sur le contrat d'apprentissage. <br/>
+                                    Parallèlement, l'entreprise et la section d'apprentissage de l'IUT signent une convention de partenariat qui rappelle leurs engagements respectifs : <br/>
+                                    assurer la formation de l'apprenti-salarié pour l'IUT , prendre en charge le coût de sa formation pour l'entreprise.<br/><br/>
+                                    <U>Nature et durée du contrat :</U><br/>
+                                    <ul align="left">
+                                        <li>	au minimum du 01 septembre 2011 au 01 septembre 2012 (12 mois)</li>
+                                        <li>	au maximum : du 01 juillet 2011 au 01 septembre 2012 (15 mois)</li>
+                                        <li>	Le contrat d'apprentissage équivaut à un contrat à durée déterminée (CDD) avec des conditions financières particulières pour l'entreprise et                                           l'apprenti. La durée est au minimum de 12 mois (durée de la formation).</li>
+                                        <li>	Le contrat d'apprentissage peut débuter jusqu'à 3 mois avant le début de la formation, ici dès le mois de juillet 2011. Le contrat                                                     d'apprentissage dure alors 15 mois au lieu de 12; les frais de formation restent évidemment inchangé mais l'apprenti est plus longtemps dans                                                    l'entreprise. Toute entreprise peut faire débuter le contrat d'apprentissage 3 mois à l'avance.</li>
+                                    </ul>
+                                    <U>Fin du contrat :</U><br/>
+                                    <ul align="left">
+                                        <li>	Comme pour un CDD, l'employeur et l'apprenti sont tenus de respecter le contrat jusqu'à son terme.</li>
+                                        <li>	Comme pour un CDD, l'employeur devra payer le solde de jours de congés qui n'auront pas été pris par l'apprenti.</li>
+                                        <li>	A la différence du CDD, il n'y a pas de prime de précarité à la fin du contrat d'apprentissage</li>
+                                        <li>	Il n'y pas d'obligation, au terme du contrat d'apprentissage , ni d'embaucher l'apprenti pour l'entreprise, ni d'accepter une proposition de                                           l'entreprise pour l'apprenti.</li>
+                                    </ul>                                
+                                    <U>L'apprenti :</U>
+                                    <ul align="left">
+                                        <li>	moins de 26 ans* en septembre 2009</li>
+                                        <li>	présente les pré-requis et/ou diplômes demandés.</li>
+                                        *Lorsque l'étudiant est âgé de plus de 26 ans, il est possible d'être embauché dans une entreprise en contrat de professionnalisation. Les modalités                                            sont alors différentes.<br/> Pour plus de renseignement, contacter le secrétariat de la licence.
+                                    </ul>
+                                    </p>
+                                <div class="bigHeight" id="licence_statut"><h2 align="center">Statut et Remuneration</h2></div>
+                                    <p align="left">
+                                    <h3 align="left"><b>Statut :</b></h3><br/>
+                                        <b>L'apprenti est considéré comme un <U>salarié</U></b>, même s'il signe un type de contrat particulier qui l'amène à s'absenter quelques semaines                                              pour suivre une formation.<br/>
+                                        En pratique, les entreprises considèrent l'apprenti comme un salarié à part entière et non comme un étudiant en stage long.
+                                        <br/>Elles appliquent généralement les mêmes procédures et critères de recrutement que pour les autres contrats.<br/>
+                                        En qualité de salarié, l'apprenti bénéficie des dispositions inscrites dans le code du travail.<br/>
+                                        Il bénéficie notamment des 5 semaines de congés payés sur les périodes en entreprise ou encore de RTT. La durée de la formation à l'IUT est prise en                                            compte dans la durée du travail.
+                                    </p><br/><br/>
+                                    <p align="left">
+                                        <h3 align="left"><b>Rémunération :</b></h3><br/>
+                                        Les conditions de rémunération sont définies au plan national et dépendent uniquement de l'âge de l'apprenti.<br/>
+                                        L'apprenti perçoit un salaire mensuel régulier, quelle que soit la répartition des périodes d'alternance (IUT/Entreprise).<br/>
+                                        A l'issue de son contrat, l'apprenti est considéré comme un salarié sans emploi et peut s'inscrire aux ASSEDIC pour bénéficier d'une indemmnisation.                                            <br/>
+                                        Selon la taille de l'entreprise, les charges patronales sont exonérées totalement ou en partie.<br/>
+                                        Pour l'apprenti-salarié, les charges salariales sont exonérées, i.e. l'apprenti perçoit la totalité du pourcentage brut ci dessous, sans aucun                                                 prélévement. <br/>
+                                        Les salaires ne sont pas comptés pour le calcul de l'impôt sur le revenu de l'apprenti (ou de ses parents)<br/>
+                                        Voici un tableau resumant les rémunérations : <br/>
+                                        <table id="table_Remuneration">
+										  <tr>
+								            <td width="50%">
+												Apprentie de <b>moins de 21 ans</b>
+											</td>
+											<td width="40%">
+												49% du SMIC* par mois 
+											</td>
+                                            <td width="10%">
+                                                658,45€
+                                            </td>
+										  </tr><br/>
+										  <tr>
+											<td width="50%">
+												Apprentie de <b>21 ans et plus</b>
+											</td>
+											<td width="40%">
+												61% du SMIC* par mois 
+											</td>
+                                            <td width="10%">
+                                                819,70€
+                                            </td>
+										  </tr><br/>
+									   </table>
+                                    <i>Si l'apprenti atteint l'âge de 21 ans en cours de contrat, la rémunération est adaptée dès le mois suivant son anniversaire.</i>
+                                    </p>
+                                 <div class="bigHeight" id="licence_recrutement"><h3 align="center">RECRUTEMENT</h3></div><br/>
+                                    <b>Une étape importante et décisive:</b><br/><br/>
+                                    L'admission définitive d'un candidat (voir conditions d'admission)  est conditionnée  à la signature d’un contrat d’apprentissage avec une entreprise.                                         <br/>
+                                    C'est au candidat de faire les démarches pour être embauché dans une entreprise.<br/><br/>
+
+                                    L'entreprise doit être située en France. A titre d'exemple, en 2009, 20% des entreprises se situaient en Auvergne, 30 % en Rhône Alpes et 50% dans le                                         reste de la France.<br/>
+                                    Toutes les entreprises, quelque soit leur taille et leur activité, peuvent convenir,  à partir du moment où les missions prévues sont connues et qu’elles                                     sont en rapport avec un des thèmes abordées en Licence.<br/>
+                                    Généralement les entreprises connaissent très mal les modalités de l'alternance et du contrat d'apprentissage, c'est au candidat de les présenter lors de                                     l'entretien d'embauche.<br/>
+                                    Il est donc important d'avoir lu les rubriques sur ces sujets.<br/>
+                                    Il est également important de savoir  que l’entreprise paye la formation de l’apprenti à l’IUT.
+                                    <br/>Le cout dépend de la taille de l’entreprise, mais l’entreprise bénéficie également d’aide de la région et de l'état. 
+                                    <br/>Si l’entreprise souhaite avoir des précisions, il suffira de la mettre en relation avec le secrétariat de la licence qui pourra alors  lui proposer                                       un devis.<br/>
+                                    Enfin, pour l'aider dans ses recherches, chaque candidat aura accès à  un site intranet : http://www.candilice.com/ où sera publié régulièrement conseils,                                     offres d'emploi etc.<br/>
+								</div>
+								<div class="bigHeight" id="licence_formation2">
+                                    <h2 align="center"> La Formation </h2>
+                                    <div class="bigHeight" id="licence_parcours"><h3 align="center">Trois parcours différents</h3></div>
+                                    <hr class="hr_line" /><br />
+                                    <p align="left">
+                                        <b> La formation :</b><br/>
+                                    Un tronc commun ( 200H) permet d'aborder les matières techniques essentielles et les connaissances générales de base.<br/>
+                                    Des modules optionnels (regroupés en parcours, 200H  + 100H de projet) proposent une approche "métier".<br/>
+                                    C'est vous qui choisissez, éventuellement avec votre entreprise, le parcours à effectuer, trois choix sont possibles :<br/>
+                                    </p>
+                                    <ul align="left">
+                                        <li>	Parcours Architecture </li>
+                                        
+                                        <li>	Parcours Tecnnical Artist</li>
+                                        
+                                        <li>	Parcours 3D temps rée & réalité virtuelle </li>
+                                    </ul>   
+                                    <p align="left">
+                                    Les parcours visent à aborder différemment l’infographie 3D en fonction du secteur d’application ou du métier visé.<br/>
+                                    Pour permettre aux étudiants de construire leur parcours de formation en fonction de leur projet professionnel. <br/>
+                                    Pour répondre aux besoins de compétences des entreprises qui recrutent nos étudiants en contrat d'apprentissage.<br/>
+                                    </p>
+                                    
+                                    <div class="bigHeight" id="licence_architecture"><h4 align="center">Parcours architecture 3D</h4></div>
+                                    <p align="left">
+                                        <h4 align="left">Objectif :</h4>
+                                        <ul align="left">
+                                            <li>	Savoir mettre l'infographie et la 3D au service de l'architecte urbaniste.</li>
+                                        </ul>
+                                    </p>
+                                    <p align="left">
+                                        <b>Contenu :</b>
+                                        <ul align="left">
+                                            <li>	Modélisation, Texturing</li>
+                                            <li>	Rendu, Eclairage</li>
+                                            <li>	Post Production 2D (Photo et vidéo)</li>
+                                            <li>	Visite virtuelle (pré-calculée et temps réel)</li>
+                                        </ul>
+                                    </p>
+                                    <p align="left">
+                                        <b>Connaissances générales en architecture : </b>
+                                        <ul align="left">
+                                            <li>	Lecture de plans et dossiers</li>
+                                            <li>	Dessin</li>
+                                            <li>	Photographie</li>
+                                            <li>	Histoire de l'architecture</li>
+                                        </ul>
+                                    </p>
+                                    <p align="left">
+                                        <b>Logiciels :</b>
+                                        <ul align="left">
+                                            <li>	Autocad</li>
+                                            <li>	3DS Max</li>
+                                            <li>	V-Ray</li>
+                                            <li>	Combustion</li>
+                                            <li>	Photoshop</li>
+                                            <li>	etc.</li>
+                                        </ul>
+                                    </p>
+                                    <p align="left">
+                                        <b> Secteurs d'activité, métiers :</b>
+                                        <ul align="left">
+                                            <li>	Infographiste au service des architectes, des urbanistes, des archéologues, des collectivités locales,...</li>
+                                            <li>	Agences de communication</li>
+                                        </ul>
+                                    </p>
+                                    <div class="bigHeight" id="licence_technical"><h4 align="center">Parcours Technical Artist</h4></div>
+                                    <p align="left">
+                                    <b>Objectif :</b>
+                                        <ul align="left">
+                                            <li>	Maîtriser des logiciels et techniques pour la production de jeux vidéo et de films d'animation</li>
+                                        </ul>
+                                    </p>
+                                    <p align="left">
+                                    <b>Contenu :</b>
+                                        <ul align="left">        
+                                            <li>	Modélisation 3D, Texturing</li>
+                                            <li>	Animation</li>
+                                            <li>	Rendu, Eclairage</li>
+                                            <li>	Scénario, Cinématique</li>
+                                        </ul>
+                                    </p>
+                                    <p align="left">
+                                    <b>Connaissances générales: </b>
+                                        <ul align="left">
+                                            <li>	Histoire de l’art </li>
+                                            <li> 	Expression artistique, modelage dessin</li>
+                                            <li>	Études critiques de films d'animation ou de jeux vidéos</li>
+                                        </ul>
+                                    </p>
+                                    <p align="left">
+                                    <b>Environnement logiciel :</b>
+                                        <ul align="left">
+                                            <li>	3DS Max , Maya</li>
+                                            <li>	Combustion, After Effects</li>
+                                            <li>	Substance</li>
+                                            <li>	Urban PAD</li>
+                                            <li>	etc.</li>
+                                        </ul>
+                                    </p>
+                                    <p align="left">
+                                    <b>Secteurs d'activité, métiers :</b>
+                                        <ul align="left">
+                                            <li>	Simulation,</li>
+                                            <li>	Serious games</li>
+                                            <li>	Jeux Vidéo,</li>
+                                            <li>	Films d'animation,</li>
+                                            <li>	post production</li>
+                                        </ul>
+                                    </p>
+                                <div class="bigHeight" id="licence_3drt"><h4 align="center">Parcours 3D temps réel et réalité virtuelle</h4> </div>
+                                  <p align="left">
+                                    <b>Objectif :</b>
+                                        <ul align="left">
+                                            <li>	Maîtriser la programmation graphique pour le développement d'applications 3D interactives</li>
+                                        </ul>
+                                    </p>
+                                    <p align="left">
+                                    <b>Contenu :</b>
+                                        <ul align="left">        
+                                            <li>	Moteur 3D temps-réel</li>
+                                            <li>	Périphériques d’interface homme-machine pour la réalité virtuelle </li>
+                                            <ul align="left">
+                                                <li>    Bras haptiques</li>
+                                                <li>    Gants de données</li>
+                                                <li>    Tracking optique</li>
+                                                <li>    Stéréovision</li>
+                                            </ul>
+                                            <li>	OpenGL, CG</li>
+                                            <li>	Architecture des cartes graphique</li>
+                                            <li>    Algorithmes de synthèse d'image avancés</li>
+                                        </ul>
+                                    </p>
+                                    <p align="left">
+                                    <b>Environnement logiciel :</b>
+                                        <ul align="left">
+                                            <li>	XNA</li>
+                                            <li>	Delta 3D</li>
+                                            <li>	OpenSceneGraph</li>
+                                            <li>	Virtools</li>
+                                            <li>	3DS Max</li>
+                                        </ul>
+                                    </p>
+                                    <p align="left">
+                                    <b>Secteurs d'activité, métiers :</b>
+                                        <ul align="left">
+                                            <li>	Serious games</li>
+                                            <li>	Jeux Vidéo,</li>
+                                            <li>	Post production,</li>
+                                            <li>	Développement d'applications 3D temps réel</li>
+                                        </ul>
+                                    </p>
+				</div>
+                                <div class="bigHeight" id="licence_conditions"><h4 align="center">Conditions d'admissions en Licence</h4></div>
+
+                                <p align="left">
+                                <b>Pour candidater en licence pro</b> vous devez être titulaire de l'un des diplôme suivants :<br/>
+                                <ul align="left">
+                                    <li> DUT à dominante Scientifique, Informatique ou Artistique</li>
+                                    <li> BTS à dominante Scientifique, Informatique ou Artistique</li>
+                                    <li> Licence L2 des universités</li>
+                                    <li> Ecole d’architecture (2 premières années validées)</li>
+                                </ul>
+                                </p>
+                                <p align="left">
+                                <b>Admissibilité / admission:</b><br/>
+
+                                    Il y a un jury de sélection différent pour chacun des parcours.<br/>
+                                    Les critères de sélection et la composition du dossier de candidature varient selon le parcours:<br/>
+                                    <ul align="left">
+                                        <li>Pour le parcours 3DTR et réalité virtuelle: avoir de solides connaissances en programmation (POO, C++,...).</li>
+                                        <li>Pour le parcours TA: avoir des bases en modélisation 3D (présentation d'un book obligatoire) et présenter de l'intérêt pour les domaines                                                    artistiques (peinture, dessin, modelage etc...).</li>  
+                                        <li>Pour le parcours architecture:  avoir des bases en modélisation 3D (présentation d'un book obligatoire) et présenter de l'intérêt pour                                                      l'architecture.</li>
+                                    </ul>
+                                    Un candidat peut demander plusieurs parcours.
+                                    Un candidat pourra être admissible pour plusieurs parcours
+                                    L’admission définitive sera associée à la signature d’un contrat d’apprentissage avec une entreprise.
+                                </p>
+                                <p align="left">
+                                    <b>Sites intranet :</b>
+
+                                    Les candidats auront accès à un site intranet pour le suivi des candidatures et des recherches d’entreprises :
+                                    <a href="http://www.candilice.com/" target="_blank"> http://www.candilice.com/</a><br/>
+                                </p>
 
 
-
-				Enfin l'IUT étant en centre ville, à 15 minutes à pied de la gare SNCF et de la gare routière, il n'est pas indispensable que vous soyez motorisé pour venir étudier au Puy.
-				Liens:
-
-				Office du tourisme
-				Mairie du Puy
-				Zoom43   (Portail d'information de la Haute-Loire)
-			</p>
-			<div class="bigHeight" id="infos_informations">INFORMATIONS</div>
-			<div class="bigHeight" id="infos_candidater">CANDIDATER</div>
-			<div class="bigHeight" id="infos_etreetudiant">
-				<div class="bigHeight" id="infos_vivre">VIVRE</div>
-				<div class="bigHeight" id="infos_seloger">SELOGER</div>
-				<div class="bigHeight" id="infos_aider">AIDER</div>
-			</div>
-			<div class="bigHeight" id="infos_contact">CONTACT</div>
-			<div class="bigHeight" id="infos_plan">PLAN<br />
-				<div id="map"></div>
-			</div>
-		</section>
-	</div>
-</div> <!-- fin container -->
-</body>
-</html>
+								<div class="bigHeight" id="licence_faq">FAQ</div>
+				          </section> <!-- fin section licence -->
+				          <section id="infos" align="center">
+				            <div class="bigHeight" id="infos_informations">INFORMATIONS</div>
+								<div class="bigHeight" id="infos_candidater">CANDIDATER</div>
+								<div class="bigHeight" id="infos_etreetudiant">
+								    <div class="bigHeight" id="infos_vivre">VIVRE</div>
+								    <div class="bigHeight" id="infos_seloger">SELOGER</div>
+								    <div class="bigHeight" id="infos_aider">AIDER</div>
+								</div>
+								<div class="bigHeight" id="infos_contact">CONTACT</div>
+								<div class="bigHeight" id="infos_plan">PLAN<br />
+								    <div id="map">
+								    </div>
+				                </div>
+				          </section>
+                    </div><!-- FIN CONTENT-->
+				</div> <!-- fin container -->
+        </body>
+       </html>

@@ -20,16 +20,44 @@ body{
 	background-size: cover;
 }
 #dut{
+
 	display: none;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	background-color: rgba (130 ,130 ,130 ,0.5);
+	border:2px solid black;
+	-moz-border-radius: 10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
 }
 #licence{
 	display: none;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	background-color: rgba (130 ,130 ,130 ,0.5);
+	border:2px solid black;
+	-moz-border-radius: 10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
 }
 #infos{
 	display: none;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	background-color: rgba (130 ,130 ,130 ,0.5);
+	border:2px solid black;
+	-moz-border-radius: 10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
 }
 .bigHeight{
-	margin-top: 200px;
+	margin-top: 100px;
 }
 #menu2{
 	display: none;
@@ -48,6 +76,7 @@ body{
 	padding-left: 10px;
 	padding-right: 10px;
 	text-align: center;
+	background-color: rgba (0,0,0,0.2);
 	border-right: 1px solid;
 	border-color: white;
 }
@@ -68,4 +97,29 @@ img.slider{
 #map{
 	width: 100%;
 	height: 450px;
+}
+#accueildiv
+{
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	background-color: grey;
+	border:2px solid black;
+	-moz-border-radius: 10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+
+}
+#table_PremiereAnnee
+{
+	margin-top: 5px;
+	margin-left: 50px;
+	border:2px solid white;
+}
+#table_Remuneration
+{
+  margin-top: 5px;
+  margin-left: 50px;
+  border:2px solid white;
 }
