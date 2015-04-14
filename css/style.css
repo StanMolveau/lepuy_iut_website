@@ -26,11 +26,6 @@ body{
 	margin-top: 10px;
 	margin-right: 20px;
 	margin-bottom: 10px;
-	background-color: rgba (130 ,130 ,130 ,0.5);
-	border:2px solid black;
-	-moz-border-radius: 10px;
-	-webkit-border-radius:10px;
-	border-radius:10px;
 }
 #licence{
 	display: none;
@@ -38,11 +33,6 @@ body{
 	margin-top: 10px;
 	margin-right: 20px;
 	margin-bottom: 10px;
-	background-color: rgba (130 ,130 ,130 ,0.5);
-	border:2px solid black;
-	-moz-border-radius: 10px;
-	-webkit-border-radius:10px;
-	border-radius:10px;
 }
 #infos{
 	display: none;
@@ -50,11 +40,6 @@ body{
 	margin-top: 10px;
 	margin-right: 20px;
 	margin-bottom: 10px;
-	background-color: rgba (130 ,130 ,130 ,0.5);
-	border:2px solid black;
-	-moz-border-radius: 10px;
-	-webkit-border-radius:10px;
-	border-radius:10px;
 }
 .bigHeight{
 	margin-top: 100px;
@@ -104,7 +89,6 @@ img.slider{
 	margin-top: 10px;
 	margin-right: 20px;
 	margin-bottom: 10px;
-	background-color: grey;
 	border:2px solid black;
 	-moz-border-radius: 10px;
 	-webkit-border-radius:10px;
@@ -122,4 +106,10 @@ img.slider{
   margin-top: 5px;
   margin-left: 50px;
   border:2px solid white;
+}
+.bgGris{
+	background-color: rgba(204,204,204,0.5);
+}
+.bgNoir{
+	background-color: rgba(255,255,255,0.5);
 }
