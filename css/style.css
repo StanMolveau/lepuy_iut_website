@@ -15,7 +15,7 @@ body{
 	height: 100%;
 }
 .bgLepuy{
-	background: url('../images/backgrounds/lepuy.png') no-repeat center center fixed; 
+	background: url('../images/backgrounds/lepuy.jpg') no-repeat center center fixed; 
 		-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
