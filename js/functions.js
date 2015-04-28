@@ -37,7 +37,7 @@ $( document ).ready(function() {
 		$("#dut").show("slow");
 		$("#licence").hide("slow");
 		$("#infos").hide("slow");
-		$('body').removeClass().addClass("bgIUT");
+		$('body').removeClass().addClass("bgIUTContent");
 	});
 	$(".link_licence").click(function(){
 		$(".sousmenu-dut").hide("slow");
@@ -48,7 +48,7 @@ $( document ).ready(function() {
 		$("#dut").hide("slow");
 		$("#licence").show("slow");
 		$("#infos").hide("slow");
-		$('body').removeClass().addClass("bgSalle");
+		$('body').removeClass().addClass("bgSalleContent");
 	});
 	$(".link_infos").click(function(){
 		$(".sousmenu-dut").hide("slow");
@@ -59,7 +59,7 @@ $( document ).ready(function() {
 		$("#dut").hide("slow");
 		$("#licence").hide("slow");
 		$("#infos").show("slow");
-		$('body').removeClass().addClass("bgSalle");
+		$('body').removeClass().addClass("bgIUT2Content");
 	});
 
 });
