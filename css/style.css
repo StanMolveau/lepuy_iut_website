@@ -4,11 +4,14 @@
 	border-color: white;
 	border-style: solid;
     height:40%;
+    padding-left: 5%;
 }
+
 .menu{
 	clear: both;	
 	width: 90%;	
 	margin: auto;
+    margin-left: 5%;
 }
 
 body{
