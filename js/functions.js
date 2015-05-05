@@ -5,7 +5,6 @@ $(document).ready(function() {
 		$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
 		return false;
 	});
-var map = L.map('map').setView([45.040431, 3.881388], 13);
 });
 
 $( document ).ready(function() {
