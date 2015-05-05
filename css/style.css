@@ -183,6 +183,7 @@ margin-left: 100px;
 table.body{
     margin-left:200px;
 }
+logo-gmail{}
 .bouton {
 	text-decoration: none;
     width:auto;
@@ -199,7 +200,7 @@ table.body{
 }
 .bouton, .bouton:active {
 	border:2px solid white;
-    background-color: rgba(63, 83, 149, 0.7);
+
 }
 .bouton {
     margin-left: 20%;
@@ -208,8 +209,8 @@ table.body{
 	text-decoration: none;
 }
 .bouton:hover {
-    background-color: rgba(63, 83, 149, 0.9);
+  	background-color: rgba(7, 0, 0, 0.5);
     text-decoration: none;
-    color: ;
+    color: white;
 }
 .bouton:active{box-shadow: 1px 1px 10px #000 inset, 0 1px 0 rgba( 255, 255, 255, 0.4);}
