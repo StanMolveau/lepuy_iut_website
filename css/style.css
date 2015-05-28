@@ -1,9 +1,13 @@
 .menu-carre{
 	background-color: grey;
 	border: 5px;
-	border-color: white;
+	border-color: black;
 	border-style: solid;
     height:40%;
+    margin-right:3%;
+    width:30%;
+
+
 
 }
 
@@ -147,6 +151,9 @@ img.slider{
         width: 100%;
         height: 450px;
       }
+.menu_DUT
+{
+}
 #accueildiv
 {
 	margin-left: 20px;
@@ -173,9 +180,18 @@ img.slider{
 }
 .bgGris{
 	background-color: rgba(204,204,204,0.5);
+	border:2px solid black;
+	-moz-border-radius: 10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
 }
 .bgNoir{
+
 	background-color: rgba(0,0,0,0.5);
+	border:2px solid black;
+	-moz-border-radius: 10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
 }
 li.body{
 margin-left: 100px;
@@ -202,7 +218,7 @@ height: 36px;
     font-family: Arial,sans-serif;
 }
 .bouton, .bouton:active {
-	border:2px solid white;
+	border:2px solid black;
 
 }
 .bouton {
