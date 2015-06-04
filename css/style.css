@@ -236,12 +236,14 @@ height: 36px;
     width:60%;
     color:#FFFFFF;
     font-family: Arial,sans-serif;
+    background-color: rgba(7,0,0,0.3);
 }
 .bouton, .bouton:active {
 	border:2px solid black;
 
 }
 .bouton {
+	color:white;
     margin-left: 20%;
     margin-top : 20%;
 	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.3);
@@ -252,7 +254,7 @@ height: 36px;
 	transform: scale(1);
 }
 .bouton:hover {
-  	background-color: rgba(255, 255, 255, 0.5);
+  	background-color: rgba(7, 0, 0, 0.6);
     text-decoration: none;
     color: white;
     transform: scale(1.2);
