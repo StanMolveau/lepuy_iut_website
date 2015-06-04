@@ -26,6 +26,7 @@ $( document ).ready(function() {
 		$("#licence").hide("slow");
 		$("#infos").hide("slow");
 		$('body').removeClass().addClass("bgLepuy");
+		
 	});
 	$(".link_dut").click(function(){
 		$(".sousmenu-dut").show("slow");
@@ -37,6 +38,7 @@ $( document ).ready(function() {
 		$("#licence").hide("slow");
 		$("#infos").hide("slow");
 		$('body').removeClass().addClass("bgIUTContent");
+
 	});
 	$(".link_licence").click(function(){
 		$(".sousmenu-dut").hide("slow");
@@ -59,6 +61,7 @@ $( document ).ready(function() {
 		$("#licence").hide("slow");
 		$("#infos").show("slow");
 		$('body').removeClass().addClass("bgIUT2Content");
+		
 	});
 
 });
