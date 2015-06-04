@@ -178,14 +178,12 @@ img.slider{
 
 #accueildiv
 {
-	margin-left: 20px;
-	margin-top: 10px;
-	margin-right: 20px;
-	margin-bottom: 10px;
-	border:2px solid black;
-	-moz-border-radius: 10px;
-	-webkit-border-radius:10px;
-	border-radius:10px;
+	color:black;
+	margin-left: 10px;
+	margin-top: 5%;
+	margin-right: 50%;
+	margin-bottom: 7%;
+
 
 }
 #table_PremiereAnnee
@@ -245,7 +243,7 @@ height: 36px;
 }
 .bouton {
     margin-left: 20%;
-    margin-top : 17%;
+    margin-top : 20%;
 	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.3);
 	text-decoration: none;
 	font-family: Arial Black ;
@@ -254,7 +252,7 @@ height: 36px;
 	transform: scale(1);
 }
 .bouton:hover {
-  	background-color: rgba(7, 0, 0, 0.5);
+  	background-color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
     color: white;
     transform: scale(1.2);
