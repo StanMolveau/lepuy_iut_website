@@ -18,6 +18,18 @@ body{
 	color: white;
 	height: 100%;
 }
+
+body p{
+margin-left: 10%;
+margin-right: 10%;
+
+}
+
+body li{
+	margin-left: 10%;
+margin-right: 10%;
+}
+
 .bgLepuy{
 	background: url('../images/backgrounds/lepuy.jpg') no-repeat center center fixed; 
 	-webkit-background-size: cover;
@@ -106,31 +118,31 @@ margin-left: 5%;
 
 }
 #infos p {
-	padding-left: 5%;
+	padding-left: 2%;
 }
 
 #licence h3{
-	padding-left: 5%;
+	padding-left: 2%;
 }
 
 #licence h4{
-	padding-left: 5%;
+	padding-left: 2%;
 }
 
 #dut h3{
-	padding-left: 5%;
+	padding-left: 2%;
 }
 
 #dut h4{
-	padding-left: 5%;
+	padding-left: 2%;
 }
 
 #infos h3{
-	padding-left: 5%;
+	padding-left: 2%;
 }
 
 #infos h4{
-	padding-left: 5%;
+	padding-left: 2%;
 }
 
 .bigHeight{
