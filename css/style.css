@@ -17,6 +17,15 @@
     margin-left: 5%;
 }
 
+.dut_premiereannee1{
+	width:10px;
+	margin-left:2%;
+}
+
+.dut_premiereannee2{
+	margin-left:2%;
+}
+
 
 body{
 	color: white;
@@ -24,14 +33,14 @@ body{
 }
 
 body p{
-margin-left: 10%;
-margin-right: 10%;
+margin-left: 5%;
+margin-right: 5%;
 
 }
 
 body li{
-	margin-left: 10%;
-margin-right: 10%;
+margin-left: 5%;
+margin-right: 5%;
 }
 
 .bgLepuy{
@@ -97,8 +106,9 @@ margin-right: 10%;
 	margin-bottom: 10px;
 }
 #dut p{
-	padding-left: 5%;
+	padding-left: 2%;
 }
+
 .mini_titre{
 margin-left: 5%;
 }
@@ -150,7 +160,7 @@ margin-left: 5%;
 }
 
 .bigHeight{
-	margin-top: 100px;
+	margin-top: 60px;
 }
 #menu2{
 	display: none;
