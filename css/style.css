@@ -1,7 +1,9 @@
+
+
 .menu-carre{
 	background-color: grey;
-	border: 5px;
-	border-color: black;
+	border: 7px;
+	border-color: white;
 	border-style: solid;
     height:40%;
     margin-right:3%;
@@ -14,6 +16,8 @@
 	margin: auto;
     margin-left: 5%;
 }
+
+
 body{
 	color: white;
 	height: 100%;
@@ -194,7 +198,7 @@ img.slider{
 	margin-left: 10px;
 	margin-top: 5%;
 	margin-right: 50%;
-	margin-bottom: 3%;
+	margin-bottom: 1%;
 
 
 }

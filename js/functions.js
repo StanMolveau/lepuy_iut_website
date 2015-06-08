@@ -26,20 +26,27 @@ $( document ).ready(function() {
 		$("#licence").hide("slow");
 		$("#infos").hide("slow");
 		$('body').removeClass().addClass("bgLepuy");
-		
 	});
+
 	$(".link_dut").click(function(){
+
 		$(".sousmenu-dut").show("slow");
 		$(".sousmenu-licence").hide("slow");
 		$(".sousmenu-infos").hide("slow");
 		$("#accueil").hide("slow");
 		$("#menu2").show("slow");
 		$("#dut").show("slow");
+		
 		$("#licence").hide("slow");
 		$("#infos").hide("slow");
 		$('body').removeClass().addClass("bgIUTContent");
-
 	});
+
+	$(".link_dut1").click(function(){
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+	});
+
+
 	$(".link_licence").click(function(){
 		$(".sousmenu-dut").hide("slow");
 		$(".sousmenu-licence").show("slow");
@@ -50,7 +57,14 @@ $( document ).ready(function() {
 		$("#licence").show("slow");
 		$("#infos").hide("slow");
 		$('body').removeClass().addClass("bgSalleContent");
+
 	});
+
+	$(".link_licence1").click(function(){
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+	});
+
+
 	$(".link_infos").click(function(){
 		$(".sousmenu-dut").hide("slow");
 		$(".sousmenu-licence").hide("slow");
@@ -59,9 +73,12 @@ $( document ).ready(function() {
 		$("#accueil").hide("slow");
 		$("#dut").hide("slow");
 		$("#licence").hide("slow");
-		$("#infos").show("slow");
+		$("#infos").show("slow");		
 		$('body').removeClass().addClass("bgIUT2Content");
 		
 	});
 
+	$(".link_infos1").click(function(){
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+	});
 });
