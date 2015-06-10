@@ -2,12 +2,15 @@
 
 .menu-carre{
 	background-color: grey;
-	border: 7px;
-	border-color: white;
+	border: 2px;
+	border-color: black;
 	border-style: solid;
     height:40%;
     margin-right:3%;
     width:30%;
+    -moz-border-radius: 10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
 }
 
 .menu{
@@ -180,8 +183,7 @@ margin-left: 5%;
 	padding-right: 10px;
 	text-align: center;
 	background-color: rgba (0,0,0,0.2);
-	border-right: 1px solid;
-	border-color: white;
+	
 }
 a.scrollTo{
 	color: white;
@@ -206,7 +208,7 @@ img.slider{
 {
 	color:black;
 	margin-left: 10px;
-	margin-top: 5%;
+	margin-top: 10%;
 	margin-right: 50%;
 	margin-bottom: 1%;
 
@@ -226,10 +228,6 @@ img.slider{
 }
 .bgGris{
 	background-color: rgba(204,204,204,0.5);
-	border:2px solid black;
-	-moz-border-radius: 10px;
-	-webkit-border-radius:10px;
-	border-radius:10px;
 }
 .bgNoir{
 
