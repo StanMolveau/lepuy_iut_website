@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$('.scrollTo').click( function() { // Au clic sur un élément
 		var page = $(this).attr('href'); // Page cible
-		var speed = 1000; // Durée de l'animation (en ms)
+		var speed = 750; // Durée de l'animation (en ms)
 		$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
 		return false;
 	});
@@ -10,7 +10,7 @@ $(document).ready(function() {
 $( document ).ready(function() {
 	$(".link_list").hover(
 		function(){
-		$(this).children('.menu_souselts').stop().show(1000);
+		$(this).children('.menu_souselts').stop().show(750);
 		},
 		function(){
 			$(this).children('.menu_souselts').stop().hide(1000);	
