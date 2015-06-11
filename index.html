@@ -18,66 +18,56 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<!-- on placera a la fin du fichier normalement pour accélerer le chargement des pages -->
-	<title>IUT Le Puy en Velay</title>	
+	<title>IUT Le Puy en Velay</title>
 </head>
 <body class="bgLepuy">
 	<div class="site container-fluid">
 		<section id="accueil">
 			<div class="row text-center">
 				<div id="accueildiv">
-					
 					<h2>Bienvenue sur le site de l'IUT du Puy-en-Velay</h2>
 					<img class="iut_logo2" src="images/logoiutmin.png" alt="logo iut " height="70" width="120">
 				</div><!-- fin section accueil -->
-					
-						<br/><br/><br/><br/><br/><br/>
 			</div> <!-- fin row -->
-					<div id="conteneur-menu">
-					<div class="row menu text-center" id="menu">
-						
-						<section class="menu-carre col-xs-4 center-block bgIUTMiniature">
-							<a href=""></a><br/>
-                            <a href="#" class="bouton link_DUT" style="color:white ";><h3 >DUT</h3></a>
+			<div id="conteneur-menu">
+				<div class="row menu text-center" id="menu">
+					<a href="#" class="link_DUT">
+						<section class="menu-carre col-xs-4 bgIUTMiniature">
+          	<h3 class="h3menu">DUT</h3>
 						</section>
-						
-						
-						<section class="menu-carre col-xs-4 center-block bgSalleMiniature">
-							
-							<a href=""></a><br/>
-                            <a href="#" class="bouton link_licence" align="center" style="color:white";><h3 >LICENCE</h3></a>
+					</a>
+					<a href="#" class="link_licence">
+						<section class="menu-carre col-xs-4 bgSalleMiniature">
+          	<h3 class="h3menu">LICENCE</h3>
 						</section>
-						
-						<section class="menu-carre col-xs-4 center-block bgIUT2Miniature">
-							
-							<a href=""></a><br/>
-                            <a href="#" class="bouton link_infos" style="color:white ";><h3>INFORMATIONS</h3></a>
+					</a>
+					<a href="#" class="link_infos">
+						<section class="menu-carre col-xs-4 bgIUT2Miniature">
+	           <h3 class="h3menu">INFORMATIONS</h3>
 						</section>
-						
-					</div> <!-- fin menu -->
-				</div><!-- Fin conteneur menu -->
-				</section><!-- fin section accueil -->
-				<div class="content">
-					<section id="menu2" class="bgGris">
-						<div class="logo">
-							<a href=""><img class="iut_logo" src="images/iut_logo.jpg" alt="logo iut imagerie numérique"></a>
-						</div>
-						<div class="menu-accueil">
-							<h3><a class="scrollTo link_accueil" href=""><i class="fa fa-home"></i>    Accueil</a></h3>
-						</div>
-						<div class="menu-dut">
-							<h3><a class="scrollTo link_dut link_dut1 " href="#dut"><i class="fa fa-university"></i>DUT</a></h3>
-							<div class="sousmenu sousmenu-dut">
-								<a class="scrollTo link_dut" href="#dut_presentation">Présentation</a><br />
-
-								<div class="link_list"><a class="scrollTo link_dut" href="#dut_cursus">Cursus</a><b class="caret"></b><br />
-									<div class="menu_souselts">
-										<a class="scrollTo link_dut" href="#dut_premiereannee">Première année</a><br />
-										<a class="scrollTo link_dut" href="#dut_deuxiemeannee">Deuxième année</a><br />	
-									</div>
+					</a>
+				</div> <!-- fin menu -->
+			</div><!-- Fin conteneur menu -->
+		</section><!-- fin section accueil -->
+		<div class="content">
+			<section id="menu2">
+				<a href=""><img class="iut_logo" src="images/iut_logo.jpg" alt="logo iut imagerie numérique"></a>
+				<div class="menu-accueil">
+					<h3><a class="scrollTo link_accueil" href=""><i class="fa fa-home"></i>    Accueil</a></h3>
+				</div>
+				<div class="menu-dut">
+					<h3><a class="scrollTo link_dut link_dut1 " href="#dut"><i class="fa fa-university"></i>DUT</a></h3>
+					<div class="sousmenu sousmenu-dut">
+						<a class="scrollTo link_dut" href="#dut_presentation">Présentation</a><br />
+							<div class="link_list"><a class="scrollTo link_dut" href="#dut_cursus">Cursus</a><b class="caret"></b><br />
+								<div class="menu_souselts">
+									<a class="scrollTo link_dut" href="#dut_premiereannee">Première année</a><br />
+									<a class="scrollTo link_dut" href="#dut_deuxiemeannee">Deuxième année</a><br />
 								</div>
-								<div class="link_list"><a class="scrollTo link_dut" href="#dut_etudier" >Etudier à l'IUT</a><b class="caret"></b><br />
+							</div>
+							<div class="link_list"><a class="scrollTo link_dut" href="#dut_etudier" >Etudier à l'IUT</a><b class="caret"></b><br />
 									<div class="menu_souselts">
-										<a class="scrollTo link_dut" href="#dut_etreetudiant">Etre étudiant à l'IUT</a><br />	
+										<a class="scrollTo link_dut" href="#dut_etreetudiant">Etre étudiant à l'IUT</a><br />
 										<a class="scrollTo link_dut" href="#dut_paroles">Paroles d'étudiants</a><br />
 									</div>
 								</div>
@@ -99,9 +89,9 @@
 								<a class="scrollTo link_licence" href="#licence_objectifs">Objectifs</a><br />
 								<div class="link_list"><a class="scrollTo link_licence" href="#licence_alternance" >Alternance</a><b class="caret"></b><br />
 									<div class="menu_souselts">
-										<a class="scrollTo link_licence" href="#licence_formation">La formation par alternance</a><br />	
-										<a class="scrollTo link_licence" href="#licence_contrat">Contrat d'Apprentissage</a><br />	
-										<a class="scrollTo link_licence" href="#licence_statut">Statut et Rémunération</a><br />	
+										<a class="scrollTo link_licence" href="#licence_formation">La formation par alternance</a><br />
+										<a class="scrollTo link_licence" href="#licence_contrat">Contrat d'Apprentissage</a><br />
+										<a class="scrollTo link_licence" href="#licence_statut">Statut et Rémunération</a><br />
 										<a class="scrollTo link_licence" href="#licence_recrutement">Recrutement en entreprise</a><br />
 									</div>
 								</div>
@@ -109,7 +99,7 @@
 									<a class="scrollTo link_licence" href="#licence_formation2">La Formation</a><b class="caret"></b><br />
 									<div class="menu_souselts">
 										<a class="scrollTo link_licence" href="#licence_parcours">Trois parcours possibles</a><br />
-										<a class="scrollTo link_licence" href="#licence_architecture">Architecture 3D</a><br />	
+										<a class="scrollTo link_licence" href="#licence_architecture">Architecture 3D</a><br />
 										<a class="scrollTo link_licence" href="#licence_technical">Technical Artist</a>	<br />
 										<a class="scrollTo link_licence" href="#licence_3drt">3D Temps Réel</a><br />
 									</div>
@@ -137,11 +127,10 @@
 						<div class="logos" >
 							<a href="mailto:dept.inf43.iut@udamail.fr" style="text-decoration: none; color: inherit; " target="_new"><i class="fa fa-envelope-square fa-3x"></i></a>
 							<a href="https://www.facebook.com/pages/Le-Puy-En-Velay-Auvergne-France/110239808994555?__mref=message_bubble" target="_new"style="text-decoration: none; color: inherit; "><i class="fa fa-facebook-official fa-3x"></i></a>
-							<a href="http://ent.u-clermont1.fr/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=1" target="_new"><img src="images/uda_logo.png" class="udaLogo" /></a> 
+							<a href="http://ent.u-clermont1.fr/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=1" target="_new"><img src="images/uda_logo.png" class="udaLogo" /></a>
 						</div>
-					</section><!-- fin seccion menu2 -->
-					<section id="dut" align="center" class="bgNoir">
-						<br/>	<br/>	<br/>
+			</section><!-- fin seccion menu2 -->
+			<section id="dut" align="center">
 						<h1 align="center" style="font-family: Arial Black ">DUT</h1>
 						<div class=" bigHeight " id="dut_presentation"><h2 align="center">PRESENTATION</h2><br /><br /><br /></div>
 						<hr class="hr_line" /><br />
@@ -154,7 +143,7 @@
 							De posséder une bonne culture générale dans le domaine de l'image numérique.<br />
 
 							Environ 50% du temps d'enseignement consacré à l'image :<br />
-							
+
 							En première année, même si une grande partie du temps est consacrée à l'apprentissage des bases de l'informatique, l'orientation générale reste liée à l'image                                 (choix des supports, domaines approfondis, etc.) <br /><br />
 							La deuxième année est consacrée entièrement à l'étude de l'informatique appliquée à l'image.<br />
 						</p>
@@ -166,16 +155,16 @@
 								<p align="left">
 									<b>1000</b> heures d'enseignement durant lesquelles vous apprendrez les bases de l'informatique...<br />
 									<i class="fa fa-shield fa-rotate-270"></i>&nbsp;&nbsp;Programmation d'algorithmiques et d'interfaces graphiques : C/C++, Qt, PHP, HTML/CSS, Python.<br>
-									
+
 									<i class="fa fa-database"></i>&nbsp;&nbsp;Bases de données : MySQL.<br>
-									
+
 									<i class="fa fa-terminal"></i>&nbsp;&nbsp;Systèmes d'exploitation : Windows et Linux.<br>
-									
+
 									<i class="fa fa-sitemap"></i>&nbsp;&nbsp;Réseaux.<br>
 								</p>
 							</div>
 							<div class="col-md-6" id="dut_premiereannee2">
-								<p align="left">	
+								<p align="left">
 
 									<u>Et profiterez d'une formation complémentaire  :</u><br />
 
@@ -188,16 +177,16 @@
 							</div><br/>
 							<div class=" col-md-12 " id="dut_deuxiemeannee">
 								<h2 align="center">Deuxieme annee</h2><br /><br />
-							
+
 							<p align="left">
 								800 heures d'enseignements durant lesquelles vous aborderez les domaines suivants :<br />
 								<i class="fa fa-shield fa-rotate-270"></i> Programmation concurrente <br>
 								<i class="fa fa-picture-o"></i> Algorithmique pour la synthèse d’images<br>
 								<i class="fa fa-mobile"></i> : <i class="icon-android"></i>  / <i class="icon-apple"></i> Programmation d'applications mobiles<br>
 								<i class="fa fa-book"></i> Utilisation de bibliothèques graphiques<br>
-								<i class="fa fa-shield fa-rotate-270"></i><b> 
-									OpenGL / 
-									OpenSceneGraph / 
+								<i class="fa fa-shield fa-rotate-270"></i><b>
+									OpenGL /
+									OpenSceneGraph /
 									Unity3D /
 								</b><br>
 								<i class="fa fa-flask"></i> Développement d'applications créatives de réalité augmentée et pourrez au choix suivre l'un des deux parcours suivant (250 h)<br>
@@ -273,7 +262,7 @@
 									</p>
 								</div>
 							<div class="col-md-6" id="diplomes">
-								<p align="left">	
+								<p align="left">
 										Pour obtenir un diplôme reconnu au niveau européen :<br/>
 										<ul align="left">
 										<li><i class="icon-li icon-ok"></i>	il est nécessaire de suivre encore une année d'études</li>
@@ -284,7 +273,7 @@
 							</div>
 
 								<div class=" col-md-12 " id="dut_poursuite"><h3 align="center">Les Poursuites</h3><br /><br /><br />
-								
+
 								<p align="left">
 									<b>Après le DUT, l'étudiant peut envisager des poursuites d'études :</b>
 									<ul align="left" class="icons-ul">
@@ -295,12 +284,12 @@
 									</ul>
 								</p>
 								</div>
-								
 
-								
+
+
 								<div class=" col-md-12 " id="dut_conditions"><h3 align="center">CONDITIONS</h3><br /><br /><br />
-								
-								
+
+
 									<p align="left">
 										<i><b>Profil à l'entrée de l'IUT </b></i>
 									</p>
@@ -344,28 +333,26 @@
 										   </tr>
 										</table>
 								</div>
-									
+
 									<div class=" bigHeight " id="dut_travaux"><h3 align="center">Travaux d'Etudiants</h3><br /><br />
 										<div class="col-md-12" id="titre_dut_travail1">
 											<b>Voici quelques travaux d'étudiants réalisés lors de divers projets 2012-2013 : </b><br/>
 										</div>
 										<div class="col-md-6" id="titre_dut_travail1">
 											<i>Modélisation de l'extérieur de l'abbatiale du Monastier-sur-Gazeille</i><br/>
-											<iframe src="http://www.youtube.com/embed/vT1wvrqA3RE" width="620" height="385"></iframe><br/><br/><br/>
+											<iframe src="http://www.youtube.com/embed/vT1wvrqA3RE" width="100%" height="385"></iframe><br/><br/><br/>
 
 										</div>
 										<div class="col-md-6" id="dut_travail2">
 											<i>Modélisation de l'intérieur de l'abbatiale du Monastier-sur-Gazeille</i><br/>
-											<iframe src="http://www.youtube.com/embed/954Vxhj30NY" width="620" height="385"></iframe><br/>
+											<iframe src="http://www.youtube.com/embed/954Vxhj30NY" width="100%" height="385"></iframe><br/>
 										</div><br/>
 									</div>
-								     
-										
-										
 							</div><!--FIN DUT_APRES-->
 						</section> <!-- fin section dut -->
-    <!-- DEBUT LICENCE--><section id="licence" align="left" class="bgNoir">
-<br/>	<br/>	<br/>
+    <!-- DEBUT LICENCE-->
+		<section id="licence" align="left">
+
 				            <div class="bigHeight" id="licence_licence"><h1 align="center" style="font-family: Arial Black ">LICENCE</h1>
 				            </div>
 				            <div class="bigHeight" id="licence_presentation"><h2 align="center" style="font-family: Helvetica Narrow, sans-serif ">PRESENTATION</h2>
@@ -384,7 +371,7 @@
 								<h3 align="center"><i class="fa fa-exclamation"></i>&nbsp;&nbsp;Objectifs</h3>
 							<p align="left">
 
-								La licence informatique SIL est spécialisée dans l’imagerie numérique et couvre les domaines de : 
+								La licence informatique SIL est spécialisée dans l’imagerie numérique et couvre les domaines de :
 								<ul align="left" class="icons-ul">
 								    <li><i class="icon-li icon-ok"></i> la modélisation 3D, </li>
 								    <li><i class="icon-li icon-ok"></i>l'animation, </li>
@@ -396,7 +383,7 @@
                                 <div class="bigHeight" id="licence_formation"><h3 align="center"><i class="fa fa-line-chart"></i>&nbsp;&nbsp;Les formations</h3></div>
                                 <p align="left">
                                     <b>La licence informatique et imagerie numérique ...</b><br/>
-                                        <i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;	Vous permet de compléter le DUT (ou autre formation Bac+2 équivalente) pour obtenir un diplôme, niveau Bac +3, reconnu au niveau Européen.   <br>                                          
+                                        <i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;	Vous permet de compléter le DUT (ou autre formation Bac+2 équivalente) pour obtenir un diplôme, niveau Bac +3, reconnu au niveau Européen.   <br>
                                        <i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;C'est une formation par alternance dont l'objectif est l'apprentissage d'un métier.<br>
                                         <i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;	Parallèlement à la formation vous acquerrez en plus une expérience professionnelle, qui facilitera par la suite votre insertion dans le monde                                          du travail.<br/>
                                 </p>
@@ -420,7 +407,7 @@
                                 <div class="bigHeight" id="licence_contrat">
                                 	<p align="left">
                                 	<i><b>Le Contrat</b></i>
-                                
+
                                     Il est signé entre un étudiant ("l'apprenti") et une entreprise.<br/>
                                     L'entreprise s'engage à assurer l'apprentissage du jeune, notamment via la formation Licence Professionnelle qu'il suivra à l'IUT.<br/>
                                     La formation suivie et le diplôme préparé sont précisés sur le contrat d'apprentissage. <br/>
@@ -448,8 +435,8 @@
                                         <li>	A la différence du CDD, il n'y a pas de prime de précarité à la fin du contrat d'apprentissage</li>
                                         <li>	Il n'y pas d'obligation, au terme du contrat d'apprentissage , ni d'embaucher l'apprenti pour l'entreprise, ni d'accepter une proposition de                                           l'entreprise pour l'apprenti.</li>
                                     </ul>
-                                </p>    
-                                <p align="left">                         
+                                </p>
+                                <p align="left">
                                     <U id="mini_titre">L'apprenti :</U>
                                 </p>
                                 <p align="left">
@@ -460,7 +447,7 @@
                                 </p>
                                 <p align="left">
                                         *Lorsque l'étudiant est âgé de plus de 26 ans, il est possible d'être embauché dans une entreprise en contrat de professionnalisation. Les modalités                                            sont alors différentes.<br/> Pour plus de renseignement, contacter le secrétariat de la licence.
-                                    
+
                                 </p>
                                 </div>
                                 <div class="bigHeight" id="licence_statut"><h2 align="center"><i class="fa fa-money"></i>&nbsp;&nbsp;Statut et Remuneration</h2></div>
@@ -491,7 +478,7 @@
 												Apprentie de <b>moins de 21 ans</b>
 											</td>
 											<td width="40%">
-												49% du SMIC* par mois 
+												49% du SMIC* par mois
 											</td>
                                             <td width="10%">
                                                 658,45€
@@ -502,7 +489,7 @@
 												Apprentie de <b>21 ans et plus</b>
 											</td>
 											<td width="40%">
-												61% du SMIC* par mois 
+												61% du SMIC* par mois
 											</td>
                                             <td width="10%">
                                                 819,70€
@@ -522,7 +509,7 @@
                                     Généralement les entreprises connaissent très mal les modalités de l'alternance et du contrat d'apprentissage, c'est au candidat de les présenter lors de                                     l'entretien d'embauche.<br/>
                                     Il est donc important d'avoir lu les rubriques sur ces sujets.<br/>
                                     Il est également important de savoir  que l’entreprise paye la formation de l’apprenti à l’IUT.
-                                    <br/>Le cout dépend de la taille de l’entreprise, mais l’entreprise bénéficie également d’aide de la région et de l'état. 
+                                    <br/>Le cout dépend de la taille de l’entreprise, mais l’entreprise bénéficie également d’aide de la région et de l'état.
                                     <br/>Si l’entreprise souhaite avoir des précisions, il suffira de la mettre en relation avec le secrétariat de la licence qui pourra alors  lui proposer                                       un devis.<br/>
                                     Enfin, pour l'aider dans ses recherches, chaque candidat aura accès à  un site intranet : http://www.candilice.com/ où sera publié régulièrement conseils,                                     offres d'emploi etc.<br/>
                                 </p>
@@ -541,17 +528,17 @@
                                     </p>
                                     <ul align="left">
                                         <li>	Parcours Architecture </li>
-                                        
+
                                         <li>	Parcours Tecnnical Artist</li>
-                                        
+
                                         <li>	Parcours 3D temps rée & réalité virtuelle </li>
-                                    </ul>   
+                                    </ul>
                                     <p align="left">
                                     Les parcours visent à aborder différemment l’infographie 3D en fonction du secteur d’application ou du métier visé.<br/>
                                     Pour permettre aux étudiants de construire leur parcours de formation en fonction de leur projet professionnel. <br/>
                                     Pour répondre aux besoins de compétences des entreprises qui recrutent nos étudiants en contrat d'apprentissage.<br/>
                                     </p>
-                                    
+
                                     <div class="bigHeight" id="licence_architecture"><h4 align="center"><i class="fa fa-cubes"></i>&nbsp;&nbsp; Parcours architecture 3D</h4></div>
                                     <p align="left">
                                         <i><b>Objectif :</b></i>
@@ -606,7 +593,7 @@
                                     </p>
                                     <p align="left">
                                     <b>Contenu :</b>
-                                        <ul align="left">        
+                                        <ul align="left">
                                             <li>	Modélisation 3D, Texturing</li>
                                             <li>	Animation</li>
                                             <li>	Rendu, Eclairage</li>
@@ -650,7 +637,7 @@
                                     </p>
                                     <p align="left">
                                     <b>Contenu :</b>
-                                        <ul align="left">        
+                                        <ul align="left">
                                             <li>	Moteur 3D temps-réel</li>
                                             <li>	Périphériques d’interface homme-machine pour la réalité virtuelle </li>
                                             <ul align="left">
@@ -702,7 +689,7 @@
                                     Les critères de sélection et la composition du dossier de candidature varient selon le parcours:<br/>
                                     <ul align="left">
                                         <li>Pour le parcours 3DTR et réalité virtuelle: avoir de solides connaissances en programmation (POO, C++,...).</li>
-                                        <li>Pour le parcours TA: avoir des bases en modélisation 3D (présentation d'un book obligatoire) et présenter de l'intérêt pour les domaines                                                    artistiques (peinture, dessin, modelage etc...).</li>  
+                                        <li>Pour le parcours TA: avoir des bases en modélisation 3D (présentation d'un book obligatoire) et présenter de l'intérêt pour les domaines                                                    artistiques (peinture, dessin, modelage etc...).</li>
                                         <li>Pour le parcours architecture:  avoir des bases en modélisation 3D (présentation d'un book obligatoire) et présenter de l'intérêt pour                                                      l'architecture.</li>
                                     </ul>
                                 </p>
@@ -719,7 +706,7 @@
                                 </p><br/><br/>
 				          </section> <!-- fin section licence -->
 
-		<!--INFOS-->      <section id="infos" align="center" class="bgNoir"><br/>	<br/>	<br/>
+		<!--INFOS-->      <section id="infos" align="center"><br/>	<br/>	<br/>
                               <div class="bigHeight" id="infos_informations"><h1 align="center" style="font-family: Arial Black ">INFORMATIONS</h1></div>
                                 <div class="bigHeight" id="infos_candidater"><h2 align="center" style="font-family: Helvetica Narrow, sans-serif ">Informations pour candidater</h2></div>
                                   <hr class="hr_line" /><br />
@@ -728,7 +715,7 @@
                                     •	Vous préparez ou vous êtes titulaire d'un Bac ou d'un titre équivalent de section Scientifique, Sciences et Technologies de l'Industrielle et du                                           Développement Durable ou Économique et Social option Mathématiques <br/>
                                     Les candidatures se font exclusivement sur le portail national "Admissions Post Bac"<br/>
                                       <a href="http://www.admission-postbac.fr/" target="_blank" align="center"><h3>Candidature PostBac</h3></a><br/>
-                                    Note : si vous n'êtes pas de nationalité française, vous devez en plus vous rendre sur le site de 
+                                    Note : si vous n'êtes pas de nationalité française, vous devez en plus vous rendre sur le site de
                                     <a href="http://www.campusfrance.org/fr/" target="_blank">www.campusfrance.org </a>afin d'effectuer vos démarches                              administratives pour l'obtention de votre visa.<br/>
                                   </p>
 
@@ -740,16 +727,16 @@
                                        <b>Candidature directe en 2ème année ou en licence professionnelle</b> <br/><br/>
                                     Lors de la première visite de ce site, créez un nouveau candidat (c'est l'étape la plus longue!). <br/>
                                     A l'issue de cette étape, un identifiant et mot de passe vous seront donnés. Retenez-les, ils vous serviront jusqu'à votre admission définitive.<br/><br/>
-                                   <i>Note : si vous n'êtes pas de nationalité française, vous devez en plus vous rendre sur le site de 
+                                   <i>Note : si vous n'êtes pas de nationalité française, vous devez en plus vous rendre sur le site de
                                        <a href="http://www.campusfrance.org/fr/" target="_blank">www.campusfrance.org </a>afin d'effectuer vos démarches administratives pour l'obtention de votre visa.</i><br/>
                                   </p>
 
-								
+
 								<div class="bigHeight" id="infos_etreetudiant">
                                     <div class="bigHeight" id="infos_vivre"><h3 align="center">Vivre au Puy-En-Velay</h3></div>
                                     <p align="left">
                                     <b>Le Puy, une ville à découvrir :</b> <br/>
- 
+
                                     Le Puy en velay est une ville de 20000 habitants au centre d'une agglomération qui en compte 50000.<br/>
                                     C'est une ville à taille humaine, riche d'un point de vue architectural et historique, qui possède de surcroît un tissu associatif dense.<br/>
                                     Située aux coeur des montagnes du Velay, au sud du massif central, c'est un lieu idéal pour tous les amoureux des loisirs en plein air (randonnée                                             pédestre, VTT, cyclisme, canoë- kayak, parapente, ski, etc...).<br/>
@@ -758,9 +745,9 @@
 
                                     Enfin l'IUT étant en centre ville, à 15 minutes à pied de la gare SNCF et de la gare routière, il n'est pas indispensable que vous soyez motorisé pour                                         venir étudier au Puy. <br/>
                                         <i>Liens:</i><br/>
-                                         </p> 
+                                         </p>
                                          <p align="left">
-                                                                
+
                                        	Office du tourisme</br>
                                        	Mairie du Puy</br>
                                        	Zoom43   (Portail d'information de la Haute-Loire)</br>
@@ -769,27 +756,27 @@
                                     <div class="bigHeight" id="infos_seloger"><h3 align="center"><i class="fa fa-home"></i>&nbsp;&nbsp;Se loger au Puy</h3></div>
                                     <p align="left">
                                     <i>Pour se loger au Puy en Velay, il y a principalement deux solutions :</i><br/>
-                                    
+
                                     Les Citées Universitaires et Auberges de jeunesse :<br/>
-                                    
-                                         <a href="https://www.google.fr/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=accueil%20saint%20georges" target="_blank">Accueil Saint Georges</a>.<br/> 
 
-                                         <a href="https://www.google.fr/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=foyer+des+jeunes+du+consulat+le+puy+en+velay" target="_blank">Foyer des Jeunes du Consulat </a>.<br/> 
+                                         <a href="https://www.google.fr/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=accueil%20saint%20georges" target="_blank">Accueil Saint Georges</a>.<br/>
 
-                                         <a href="https://www.google.fr/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=R%C3%A9sidence+jeunes+43" target="_blank">Résidence Jeunes 43 </a>.<br/> 
+                                         <a href="https://www.google.fr/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=foyer+des+jeunes+du+consulat+le+puy+en+velay" target="_blank">Foyer des Jeunes du Consulat </a>.<br/>
+
+                                         <a href="https://www.google.fr/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=R%C3%A9sidence+jeunes+43" target="_blank">Résidence Jeunes 43 </a>.<br/>
                                     </p>
-                                    
+
 
                                     <b>Agences de locations </b><br/><br/>
-                                    Il y a de nombreuses agences de locations d'appartements au Puy en Velay : Vous pouvez les retrouver en cherchant  
-                                    <a href="http://www.pagesjaunes.fr/" target="_blank">ici</a>.<br/>                                    
-                                    
+                                    Il y a de nombreuses agences de locations d'appartements au Puy en Velay : Vous pouvez les retrouver en cherchant
+                                    <a href="http://www.pagesjaunes.fr/" target="_blank">ici</a>.<br/>
+
                                     <div class="bigHeight" id="infos_aides"><h3 align="center"><i class="fa fa-users"></i>&nbsp;&nbsp;Aides Financières (Bourses/APL)</h3></div>
                                     <p align="left">
                                     <b>Les deux principaux types d'aides auxquelles vous pouvez avoir droit sont :</b>
 
                                     <i><b>Les bourses :</b></i>
-                                    
+
                                     Pour savoir si vous y avez droit, consultez le site du CROUS de Clermont-Ferrand</br>
                                      <a href="http://www.crous-clermont.fr/Modeles/Affiche_Page.php?id_page=38" target="_blank" align="center"><h3>CROUS DE CLERMONT-FERRAND</h3></a><br/>
                                     <U>25, rue Etienne Dolet</br>
@@ -805,23 +792,23 @@
                                     Téléphone(s): <b>0820254310</b> - Fax: <b>0471075722</b></br>
                                     <a href="http://www.caf.fr/ma-caf/caf-de-la-haute-loire/actualites" target="_blank" align="center"><h3>CAF de la Haute Loire</h3></a><br/>
 
-                                    
-                                    
+
+
 								</div>
 								<div class="bigHeight" id="infos_contact"><h3><i class="fa fa-phone"></i>&nbsp;&nbsp;Nous contacter...</h3></div>
 							<p align="left">
                               <b>Pour nous contacter : Deux solutions s'offrent à vous ...</b></br>
-                              
+
                                 Participer aux journées portes ouvertes le Samedi 16 février 2015 de 10h à 17h</br>
                                 Durant cette journée vous pourrez :<br/>
                             </p>
                              <p align="left">
-                             Rencontrer les enseignants et les étudiants/ 
-                             Avoir toutes les réponses aux questions concernant la formation/ 
-                             Voir des réalisations d'étudiants/ 
-                             Visiter les locaux de l'établissement/ 
-                             Faire acte de candidature/ 
-                             C'est une rencontre importante entre lycéens, étudiants et enseignants/ 
+                             Rencontrer les enseignants et les étudiants/
+                             Avoir toutes les réponses aux questions concernant la formation/
+                             Voir des réalisations d'étudiants/
+                             Visiter les locaux de l'établissement/
+                             Faire acte de candidature/
+                             C'est une rencontre importante entre lycéens, étudiants et enseignants/
                              Mais vous pouvez également prendre contact directement avec le secrétariat ... </p>
                              <i><b><i class="fa fa-chevron-circle-right"></i> Adresse:</b></i><br/>
                               <p align="left">

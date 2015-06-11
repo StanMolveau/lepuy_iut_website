@@ -1,5 +1,20 @@
+body{
+	color: white;
+	height: 100%;
+}
+body p{
+margin-left: 5%;
+margin-right: 5%;
 
+}
 
+body li{
+margin-left: 5%;
+margin-right: 5%;
+}
+#accueildiv{
+	height: 30%;
+}
 .menu-carre{
 	background-color: grey;
 	border: 2px;
@@ -11,11 +26,16 @@
     -moz-border-radius: 10px;
 	-webkit-border-radius:10px;
 	border-radius:10px;
+	display:table;
+}
+.h3menu{
+	color: white;
+	vertical-align: middle;
+display: table-cell;
 }
 
 .menu{
-	clear: both;	
-	width: 90%;	
+	clear: both;
 	margin: auto;
     margin-left: 5%;
 }
@@ -29,32 +49,15 @@
 	margin-left:2%;
 }
 
-
-body{
-	color: white;
-	height: 100%;
-}
-
-body p{
-margin-left: 5%;
-margin-right: 5%;
-
-}
-
-body li{
-margin-left: 5%;
-margin-right: 5%;
-}
-
 .bgLepuy{
-	background: url('../images/backgrounds/lepuy.jpg') no-repeat center center fixed; 
+	background: url('../images/backgrounds/lepuy.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
 .bgIUTMiniature{
-	background-image: url('../images/backgrounds/iut.jpg'); 
+	background-image: url('../images/backgrounds/iut.jpg');
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -66,18 +69,18 @@ margin-right: 5%;
 		-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover; 
+	background-size: cover;
 }
 .bgIUT2Miniature{
 	background-image: url('../images/backgrounds/IUT2.jpg');
 		-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover; 
+	background-size: cover;
 }
 
 .bgIUTContent{
-	background: url('../images/backgrounds/iut.jpg')no-repeat center center fixed; 
+	background: url('../images/backgrounds/iut.jpg')no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -89,26 +92,21 @@ margin-right: 5%;
 		-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover; 
+	background-size: cover;
 }
 .bgIUT2Content{
 	background: url('../images/backgrounds/IUT2.jpg')no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover; 
+	background-size: cover;
 }
 
 
 #dut{
-
 	display: none;
-	margin-left: 20px;
-	margin-top: 10px;
-	margin-right: 20px;
-	margin-bottom: 10px;
 }
-#dut p{
+#dut p h3 h4{
 	padding-left: 2%;
 }
 
@@ -118,62 +116,29 @@ margin-left: 5%;
 
 #licence{
 	display: none;
-	margin-left: 20px;
-	margin-top: 10px;
-	margin-right: 20px;
-	margin-bottom: 10px;
+
 }
-#licence p{
+#licence p h3 h4{
 	padding-left: 5%;
 }
 #infos{
 	display: none;
-	margin-left: 20px;
-	margin-top: 10px;
-	margin-right: 20px;
-	margin-bottom: 10px;
-
 }
-#infos p {
-	padding-left: 2%;
-}
-
-#licence h3{
-	padding-left: 2%;
-}
-
-#licence h4{
-	padding-left: 2%;
-}
-
-#dut h3{
-	padding-left: 2%;
-}
-
-#dut h4{
-	padding-left: 2%;
-}
-
-#infos h3{
-	padding-left: 2%;
-}
-
-#infos h4{
+#infos p h3 h4{
 	padding-left: 2%;
 }
 
 .bigHeight{
 	margin-top: 60px;
 }
-#menu2{
-	display: none;
-}
 .content{
 	position: absolute;
 	left: 15%;
 	top: 0;
+	background-color: rgba(0,0,0,0.5);
 }
 #menu2{
+	display: none;
 	width: 15%;
 	position: fixed;
 	top: 0;
@@ -182,8 +147,8 @@ margin-left: 5%;
 	padding-left: 10px;
 	padding-right: 10px;
 	text-align: center;
-	background-color: rgba (0,0,0,0.2);
-	
+	background-color: rgba(204,204,204,0.5);
+
 }
 a.scrollTo{
 	color: white;
@@ -204,18 +169,15 @@ img.slider{
         height: 450px;
       }
 
-#accueildiv
-{
+#accueildiv {
 	color:black;
 	margin-left: 10px;
 	margin-top: 10%;
 	margin-right: 50%;
 	margin-bottom: 1%;
 
-
 }
-#table_PremiereAnnee
-{
+#table_PremiereAnnee{
 	margin-top: 5px;
 	margin-left: 50px;
 	border:2px solid white;
@@ -225,17 +187,6 @@ img.slider{
   margin-top: 5px;
   margin-left: 50px;
   border:2px solid white;
-}
-.bgGris{
-	background-color: rgba(204,204,204,0.5);
-}
-.bgNoir{
-
-	background-color: rgba(0,0,0,0.5);
-	border:2px solid black;
-	-moz-border-radius: 10px;
-	-webkit-border-radius:10px;
-	border-radius:10px;
 }
 li.body{
 margin-left: 100px;
@@ -247,43 +198,3 @@ table.body{
 width: 36px;
 height: 36px;
 }
-.bouton {
-	text-decoration: none;
-    width:auto;
-    padding:8px 0;
-    text-align:center;
-    display: inline-block;
-    float:left;
-    margin:0 8px 0 0;
-    border-radius:7px;
-    font-size: 0.85em;
-    width:60%;
-    color:#FFFFFF;
-    font-family: Arial,sans-serif;
-    background-color: rgba(7,0,0,0.3);
-}
-.bouton, .bouton:active {
-	border:2px solid black;
-
-}
-.bouton {
-	color:white;
-    margin-left: 20%;
-    margin-top : 20%;
-	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.3);
-	text-decoration: none;
-	font-family: Arial Black ;
-	font-weight: 900;
-	transition-duration: 1s;
-	transform: scale(1);
-}
-.bouton:hover {
-  	background-color: rgba(7, 0, 0, 0.6);
-    text-decoration: none;
-    color: white;
-    transform: scale(1.2);
-   transition-duration: 1s;
-}
-.bouton:active{box-shadow: 1px 1px 10px #000 inset, 0 1px 0 rgba( 255, 255, 255, 0.4);}
-
-   
